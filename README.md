@@ -73,6 +73,18 @@ All the generated data will be stored in `./ft_data/`. We adopt [LlamaFactory](h
 ## ✨ Evaluation
 We follow the official evaluation methods proposed by the [BIRD](https://github.com/AlibabaResearch/DAMO-ConvAI/tree/main/bird) and [SPIDER](https://github.com/taoyds/spider). The corresponding evaluation scripts can be obtained from their official code repositories.
 
+### Model Performance Results with SHARE on BIRD
+Updates on the performance of the latest advanced model with SHARE-8B will be provided here.
+
+
+
+| Model        | Simple     | Moderate | Challenging | Total |
+|--------------|------------|----------|----------|------------|
+| 🔥 Dev Set |   |     |      | |
+|  GPT-5  | 71.57  | 57.45     | 51.71     | 65.45 |
+|🔥 Test Set |   |     |      | |
+| GPT-5  | 77.87  | 68.47    | 58.25    | 71.83 |
+
 
 ## ✨ Project Structure
 ```txt
