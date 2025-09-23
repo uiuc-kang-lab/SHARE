@@ -134,11 +134,17 @@ Updates on the performance of the latest advanced model with SHARE-8B will be pr
 Please cite the repo if you think our work is helpful to you.
 
 ```text
-@article{qu2025share,
-  title={SHARE: An SLM-based Hierarchical Action CorREction Assistant for Text-to-SQL},
-  author={Qu, Ge and Li, Jinyang and Qin, Bowen and Li, Xiaolong and Huo, Nan and Ma, Chenhao and Cheng, Reynold},
-  journal={arXiv preprint arXiv:2506.00391},
-  year={2025}
+@inproceedings{qu-etal-2025-share,
+    title = "{SHARE}: An {SLM}-based Hierarchical Action {C}or{RE}ction Assistant for Text-to-{SQL}",
+    author = "Qu, Ge  and
+      Li, Jinyang  and
+      Qin, Bowen  and
+      Li, Xiaolong  and
+      Huo, Nan  and
+      Ma, Chenhao  and
+      Cheng, Reynold",
+    year = "2025",
+    publisher = "Association for Computational Linguistics"
 }
 ```
 
