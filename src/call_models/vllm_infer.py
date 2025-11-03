@@ -143,24 +143,39 @@ def infer_batch(model_path, prompts, data_items, system_prompt = None,
     print("All batch inference completed.")
     return all_data_with_responses
 
-if __name__ == "__main__":
-    model_path = '/home/qinbowen/just_malou/gq2138/share/model/lom'
-    prompt_path = '/home/qinbowen/just_malou/gq2138/share_tmp/res/prompts/tmp_infer/sr2sr.jsonl'
-    # output_path = '/home/qinbowen/just_malou/gq2138/share/res/outputs/tmp_infer/sr2sr.jsonl'
-    output_path = '/home/qinbowen/just_malou/gq2138/share_tmp/res/outputs/tmp_infer/test.jsonl'
-    
-    os.environ["CUDA_VISIBLE_DEVICES"] = '4,5,6,7'
-    
-    system_prompt = "You are an expert about text-to-SQL and pandas code."
-    
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Call APIs for model inference")
+    parser.add_argument("--model_path", type=str, required=True,
+                        help="Path to the model checkpoint or serving endpoint")
+    parser.add_argument("--prompt_path", type=str, required=True,
+                        help="Path to the input prompt JSONL file")
+    parser.add_argument("--output_path", type=str, required=True,
+                        help="Path to save the output responses JSONL")
+
+    parser.add_argument("--cuda_devices", type=str, default="0",
+                        help="CUDA_VISIBLE_DEVICES value, e.g. '0,1' (default: 0)")
+    parser.add_argument("--system_prompt", type=str,
+                        default="You are an expert about text-to-SQL and pandas code.",
+                        help="System prompt to prepend for the model")
+    parser.add_argument("--max_token_length", type=int, default=1024,
+                        help="Maximum token length for the model (if applicable)")
+    return parser.parse_args()
+
+def main(args):
+    os.environ["CUDA_VISIBLE_DEVICES"] = args.cuda_devices
     data_items = []
     prompts = []
-    with open(prompt_path, "r") as f:
+    with open(args.prompt_path, "r") as f:
         for idx, item in enumerate(jsonlines.Reader(f)):
             prompts.append(item["prompt"])
             data_items.append(item)
             
     infer_list = infer_batch(
-        model_path, prompts, data_items, system_prompt = system_prompt
+        args.model_path, prompts, data_items, system_prompt = args.system_prompt
     )
-    save_jsonl(infer_list, output_path)
+    save_jsonl(infer_list, args.output_path)
+    
+if __name__ == "__main__":
+    args = parse_args()
+    main(args)

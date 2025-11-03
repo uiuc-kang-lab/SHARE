@@ -16,9 +16,6 @@ OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
 ENGINE_ID="YOUR_ENGINE_ID"
 
 
-
-
-
 def api_request(messages, engine, client, backend, **kwargs):
     """
     Calls the underlying LLM endpoint based on the backend.
@@ -114,42 +111,5 @@ def write_response(data, output_path):
         f.write(json.dumps(data, ensure_ascii=False) + "\n")
         
 
-# def parse_args():
-#     parser = argparse.ArgumentParser(description="Call APIs for model inference")
-#     parser.add_argument("--max_token_length", type=int, default=1024, help="Maximum token length for the model")
-#     parser.add_argument("--start_idx", type=int, default=0, help="Starting index for processing prompts")
-#     parser.add_argument("--prompt_path", type=str, required=True, help="Path to the input prompt JSONL file")
-#     parser.add_argument("--output_path", type=str, required=True, help="Path to save the output responses")
-    
-#     return parser.parse_args()
 
 
-
-
-
-# if __name__ == "__main__":
-#     args = parse_args()
-    
-#     prompt_jsonl = load_jsonl(args.prompt_path)
-#     prompts = [content['prompt'] for content in prompt_jsonl][args.start_idx:]
-#     # prompts = [content['prompt'] for content in prompt_jsonl]
-#     print(prompts[0])
-#     if os.path.exists(args.output_path):
-#         os.remove(args.output_path)
-    
-#     for idx in tqdm.tqdm(range(len(prompts))):
-#         prompt = prompts[idx]
-#         messages = [{"role": "user", "content": prompt}]
-#         reasoning_content, content, token_usage = call_api_model(
-#             messages,
-#             model_name=ENGINE_ID,
-#             max_tokens=args.max_token_length
-#         )
-#         data_list = {}
-#         data_list['idx'] = idx + args.start_idx
-#         data_list["prompt"] = prompt
-#         data_list["response"] = content
-#         data_list["reasoning_content"] = reasoning_content if reasoning_content else ""
-#         data_list["token_usage"] = token_usage if token_usage else ""
-#         print(content)
-#         write_response(data_list, args.output_path)
