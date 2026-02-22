@@ -1,0 +1,5461 @@
+{
+    "0": [
+        "customers.Currency"
+    ],
+    "1": [
+        "yearmonth.CustomerID",
+        "yearmonth.Consumption",
+        "yearmonth.Date",
+        "customers.CustomerID",
+        "customers.Segment"
+    ],
+    "2": [
+        "yearmonth.CustomerID",
+        "yearmonth.Consumption",
+        "yearmonth.Date",
+        "customers.CustomerID",
+        "customers.Segment"
+    ],
+    "3": [
+        "yearmonth.CustomerID",
+        "yearmonth.Consumption",
+        "customers.Currency",
+        "yearmonth.Date",
+        "customers.CustomerID"
+    ],
+    "4": [
+        "yearmonth.CustomerID",
+        "yearmonth.Consumption",
+        "customers.Currency",
+        "yearmonth.Date",
+        "customers.CustomerID"
+    ],
+    "5": [
+        "yearmonth.CustomerID",
+        "yearmonth.Consumption",
+        "yearmonth.Date",
+        "customers.CustomerID",
+        "customers.Segment"
+    ],
+    "6": [
+        "yearmonth.CustomerID",
+        "yearmonth.Consumption",
+        "customers.Currency",
+        "yearmonth.Date",
+        "customers.CustomerID",
+        "customers.Segment"
+    ],
+    "7": [
+        "yearmonth.CustomerID",
+        "yearmonth.Consumption",
+        "customers.Currency",
+        "yearmonth.Date",
+        "customers.CustomerID",
+        "customers.Segment"
+    ],
+    "8": [
+        "yearmonth.Consumption",
+        "yearmonth.Date",
+        "yearmonth.CustomerID"
+    ],
+    "9": [
+        "gasstations.Country",
+        "gasstations.Segment"
+    ],
+    "10": [
+        "customers.Currency",
+        "transactions_1k.Amount",
+        "transactions_1k.Price",
+        "transactions_1k.CustomerID",
+        "customers.CustomerID",
+        "customers.Segment"
+    ],
+    "11": [
+        "customers.CustomerID",
+        "yearmonth.Consumption",
+        "yearmonth.CustomerID",
+        "customers.Segment"
+    ],
+    "12": [
+        "yearmonth.Consumption",
+        "yearmonth.Date"
+    ],
+    "13": [
+        "yearmonth.Consumption",
+        "yearmonth.Date"
+    ],
+    "14": [
+        "transactions_1k.Date",
+        "transactions_1k.ProductID",
+        "products.ProductID",
+        "products.Description"
+    ],
+    "15": [
+        "transactions_1k.Date",
+        "gasstations.GasStationID",
+        "gasstations.Country",
+        "transactions_1k.GasStationID"
+    ],
+    "16": [
+        "customers.CustomerID",
+        "yearmonth.Consumption",
+        "customers.Currency",
+        "yearmonth.CustomerID"
+    ],
+    "17": [
+        "gasstations.GasStationID",
+        "products.Description",
+        "transactions_1k.ProductID",
+        "gasstations.Country",
+        "transactions_1k.GasStationID",
+        "products.ProductID"
+    ],
+    "18": [
+        "transactions_1k.Time",
+        "gasstations.GasStationID",
+        "gasstations.ChainID",
+        "transactions_1k.GasStationID"
+    ],
+    "19": [
+        "transactions_1k.Date",
+        "gasstations.GasStationID",
+        "gasstations.Country",
+        "transactions_1k.GasStationID"
+    ],
+    "20": [
+        "transactions_1k.Date",
+        "transactions_1k.Time",
+        "customers.Currency",
+        "transactions_1k.CustomerID",
+        "customers.CustomerID"
+    ],
+    "21": [
+        "transactions_1k.Date",
+        "transactions_1k.Time",
+        "transactions_1k.CustomerID",
+        "customers.CustomerID",
+        "customers.Segment"
+    ],
+    "22": [
+        "transactions_1k.Date",
+        "gasstations.GasStationID",
+        "transactions_1k.Time",
+        "gasstations.Country",
+        "transactions_1k.GasStationID"
+    ],
+    "23": [
+        "transactions_1k.Date",
+        "transactions_1k.Amount",
+        "transactions_1k.Price",
+        "transactions_1k.CustomerID",
+        "customers.CustomerID",
+        "customers.Segment"
+    ],
+    "24": [
+        "customers.CustomerID",
+        "transactions_1k.Date",
+        "customers.Currency",
+        "transactions_1k.CustomerID"
+    ],
+    "25": [
+        "transactions_1k.Date",
+        "yearmonth.CustomerID",
+        "yearmonth.Consumption",
+        "transactions_1k.Price",
+        "yearmonth.Date",
+        "transactions_1k.CustomerID"
+    ],
+    "26": [
+        "gasstations.Country",
+        "gasstations.Segment"
+    ],
+    "27": [
+        "transactions_1k.Date",
+        "gasstations.GasStationID",
+        "transactions_1k.Amount",
+        "transactions_1k.Price",
+        "transactions_1k.CustomerID",
+        "transactions_1k.GasStationID"
+    ],
+    "28": [
+        "customers.Currency",
+        "transactions_1k.Amount",
+        "transactions_1k.Price",
+        "transactions_1k.CustomerID",
+        "customers.CustomerID"
+    ],
+    "29": [
+        "transactions_1k.Date",
+        "yearmonth.CustomerID",
+        "yearmonth.Consumption",
+        "transactions_1k.ProductID",
+        "transactions_1k.Amount",
+        "transactions_1k.Price",
+        "yearmonth.Date",
+        "transactions_1k.CustomerID",
+        "customers.CustomerID"
+    ],
+    "30": [
+        "member.last_name",
+        "major.major_name",
+        "member.link_to_major",
+        "major.major_id",
+        "member.first_name"
+    ],
+    "31": [
+        "event.event_id",
+        "member.t_shirt_size",
+        "attendance.link_to_member",
+        "attendance.link_to_event",
+        "member.member_id",
+        "event.event_name"
+    ],
+    "32": [
+        "attendance.link_to_member",
+        "event.type",
+        "attendance.link_to_event",
+        "event.event_id"
+    ],
+    "33": [
+        "event.event_id",
+        "attendance.link_to_member",
+        "attendance.link_to_event",
+        "event.type",
+        "event.event_name"
+    ],
+    "34": [
+        "income.link_to_member",
+        "member.position",
+        "income.amount",
+        "member.member_id"
+    ],
+    "35": [
+        "member.zip",
+        "zip_code.zip_code",
+        "zip_code.short_state",
+        "member.last_name",
+        "zip_code.state",
+        "member.first_name"
+    ],
+    "36": [
+        "event.event_id",
+        "expense.approved",
+        "expense.link_to_budget",
+        "event.event_date",
+        "budget.budget_id",
+        "budget.link_to_event",
+        "event.event_name"
+    ],
+    "37": [
+        "expense.link_to_budget",
+        "expense.expense_date",
+        "expense.cost",
+        "member.last_name",
+        "budget.budget_id",
+        "member.first_name",
+        "expense.link_to_member",
+        "budget.spent",
+        "budget.link_to_event",
+        "member.member_id",
+        "event.event_id"
+    ],
+    "38": [
+        "event.event_date",
+        "event.type",
+        "budget.spent",
+        "budget.link_to_event",
+        "event.event_id"
+    ],
+    "39": [
+        "income.notes",
+        "income.date_received",
+        "income.source"
+    ],
+    "40": [
+        "member.last_name",
+        "member.phone",
+        "member.first_name"
+    ],
+    "41": [
+        "expense.link_to_budget",
+        "expense.expense_date",
+        "event.status",
+        "budget.budget_id",
+        "expense.expense_description",
+        "budget.event_status"
+    ],
+    "42": [
+        "member.last_name",
+        "major.major_name",
+        "member.link_to_major",
+        "major.major_id",
+        "member.first_name"
+    ],
+    "43": [
+        "major.major_name",
+        "member.link_to_major",
+        "major.major_id",
+        "member.t_shirt_size"
+    ],
+    "44": [
+        "member.link_to_major",
+        "major.major_id",
+        "member.position",
+        "major.department"
+    ],
+    "45": [
+        "income.date_received",
+        "member.last_name",
+        "income.source",
+        "income.link_to_member",
+        "member.member_id",
+        "member.first_name"
+    ],
+    "46": [
+        "event.event_id",
+        "budget.category",
+        "budget.amount",
+        "budget.link_to_event",
+        "event.event_name"
+    ],
+    "47": [
+        "expense.cost",
+        "expense.expense_description"
+    ],
+    "48": [
+        "zip_code.county",
+        "zip_code.city",
+        "zip_code.state",
+        "zip_code.zip_code"
+    ],
+    "49": [
+        "major.major_name",
+        "member.link_to_major",
+        "major.major_id",
+        "member.phone"
+    ],
+    "50": [
+        "event.event_name",
+        "attendance.link_to_member",
+        "attendance.link_to_event",
+        "event.event_id"
+    ],
+    "51": [
+        "major.department",
+        "member.last_name",
+        "member.link_to_major",
+        "major.college",
+        "major.major_id",
+        "member.first_name"
+    ],
+    "52": [
+        "event.event_id",
+        "event.status",
+        "budget.amount",
+        "budget.spent",
+        "budget.link_to_event",
+        "event.event_name"
+    ],
+    "53": [
+        "budget.spent",
+        "budget.link_to_event"
+    ],
+    "54": [
+        "budget.category",
+        "budget.spent"
+    ],
+    "55": [
+        "attendance.link_to_member",
+        "member.last_name",
+        "attendance.link_to_event",
+        "member.member_id",
+        "member.first_name"
+    ],
+    "56": [
+        "expense.link_to_budget",
+        "member.last_name",
+        "budget.budget_id",
+        "member.first_name",
+        "expense.link_to_member",
+        "event.event_name",
+        "budget.link_to_event",
+        "member.member_id",
+        "event.event_id"
+    ],
+    "57": [
+        "event.event_id",
+        "expense.link_to_budget",
+        "expense.cost",
+        "budget.budget_id",
+        "budget.link_to_event",
+        "event.event_name"
+    ],
+    "58": [
+        "event.event_id",
+        "expense.link_to_budget",
+        "expense.cost",
+        "budget.budget_id",
+        "budget.link_to_event",
+        "event.event_name"
+    ],
+    "59": [
+        "income.amount",
+        "income.date_received",
+        "income.source"
+    ],
+    "60": [
+        "major.major_name",
+        "member.link_to_major",
+        "major.major_id"
+    ],
+    "61": [
+        "event.event_id",
+        "budget.category",
+        "budget.spent",
+        "budget.link_to_event",
+        "event.event_name"
+    ],
+    "62": [
+        "attendance.link_to_member",
+        "member.last_name",
+        "attendance.link_to_event",
+        "member.first_name",
+        "event.event_name",
+        "member.member_id",
+        "event.event_id"
+    ],
+    "63": [
+        "event.event_id",
+        "expense.link_to_budget",
+        "expense.cost",
+        "budget.budget_id",
+        "expense.expense_description",
+        "budget.link_to_event",
+        "event.event_name"
+    ],
+    "64": [
+        "budget.remaining",
+        "event.event_id",
+        "event.status",
+        "budget.link_to_event",
+        "event.event_name"
+    ],
+    "65": [
+        "event.event_id",
+        "expense.approved",
+        "expense.link_to_budget",
+        "expense.cost",
+        "budget.category",
+        "budget.budget_id",
+        "budget.link_to_event",
+        "event.event_name"
+    ],
+    "66": [
+        "event.event_id",
+        "budget.category",
+        "budget.amount",
+        "budget.link_to_event",
+        "event.event_name"
+    ],
+    "67": [
+        "expense.expense_date",
+        "expense.cost"
+    ],
+    "68": [
+        "expense.cost",
+        "member.last_name",
+        "expense.link_to_member",
+        "member.member_id",
+        "member.first_name"
+    ],
+    "69": [
+        "member.last_name",
+        "expense.link_to_member",
+        "expense.expense_description",
+        "member.member_id",
+        "member.first_name"
+    ],
+    "70": [
+        "event.type",
+        "event.location"
+    ],
+    "71": [
+        "major.department",
+        "member.last_name",
+        "major.major_name",
+        "member.link_to_major",
+        "member.position",
+        "major.college",
+        "major.major_id"
+    ],
+    "72": [
+        "event.location",
+        "budget.category",
+        "event.type",
+        "budget.spent",
+        "budget.link_to_event",
+        "event.event_id"
+    ],
+    "73": [
+        "income.amount",
+        "member.t_shirt_size",
+        "member.position",
+        "income.link_to_member",
+        "member.member_id"
+    ],
+    "74": [
+        "event.status",
+        "event.type",
+        "event.event_date",
+        "event.event_name"
+    ],
+    "75": [
+        "expense.cost",
+        "member.last_name",
+        "expense.link_to_member",
+        "member.phone",
+        "member.member_id",
+        "member.first_name"
+    ],
+    "76": [
+        "expense.cost",
+        "member.last_name",
+        "expense.link_to_member",
+        "expense.expense_description",
+        "member.member_id",
+        "member.first_name"
+    ],
+    "77": [
+        "income.amount",
+        "income.date_received",
+        "member.last_name",
+        "income.link_to_member",
+        "member.member_id",
+        "member.first_name"
+    ],
+    "78": [
+        "Patient.SEX",
+        "Patient.Admission"
+    ],
+    "79": [
+        "Patient.SEX",
+        "Patient.Birthday"
+    ],
+    "80": [
+        "Patient.Diagnosis",
+        "Patient.Admission"
+    ],
+    "81": [
+        "Patient.Diagnosis",
+        "Laboratory.PT",
+        "Laboratory.GPT",
+        "Laboratory.ID",
+        "Laboratory.GOT",
+        "Patient.ID",
+        "Laboratory.Date"
+    ],
+    "82": [
+        "Laboratory.LDH",
+        "Laboratory.ID",
+        "Patient.SEX",
+        "Patient.ID",
+        "Patient.Birthday"
+    ],
+    "83": [
+        "Patient.ID",
+        "Examination.RVVT",
+        "Patient.Birthday",
+        "Examination.ID"
+    ],
+    "84": [
+        "Examination.Diagnosis",
+        "Patient.Diagnosis",
+        "Examination.ID",
+        "Patient.SEX",
+        "Examination.Thrombosis",
+        "Patient.ID"
+    ],
+    "85": [
+        "Patient.SEX",
+        "Patient.First Date",
+        "Patient.Admission"
+    ],
+    "86": [
+        "Examination.ID",
+        "Examination.Examination Date",
+        "Examination.Thrombosis",
+        "Patient.SEX",
+        "Patient.ID"
+    ],
+    "87": [
+        "Examination.Diagnosis",
+        "Patient.Diagnosis",
+        "Examination.ID",
+        "Patient.ID",
+        "Patient.Birthday",
+        "Examination.Symptoms"
+    ],
+    "88": [
+        "Patient.Diagnosis",
+        "Laboratory.ID",
+        "Patient.ID",
+        "Laboratory.Date",
+        "Patient.First Date",
+        "Patient.Birthday"
+    ],
+    "89": [
+        "Laboratory.UA",
+        "Patient.SEX",
+        "Patient.ID",
+        "Laboratory.ID"
+    ],
+    "90": [
+        "Patient.ID",
+        "Examination.Examination Date",
+        "Patient.Birthday",
+        "Examination.ID"
+    ],
+    "91": [
+        "Patient.Diagnosis",
+        "Laboratory.HGB",
+        "Laboratory.ID",
+        "Patient.ID",
+        "Laboratory.Date",
+        "Patient.Birthday"
+    ],
+    "92": [
+        "Examination.Diagnosis",
+        "Patient.Diagnosis",
+        "Examination.ID",
+        "Examination.Examination Date",
+        "Patient.ID",
+        "Examination.aCL IgM",
+        "Patient.Description"
+    ],
+    "93": [
+        "Laboratory.ID",
+        "Patient.ID",
+        "Laboratory.T-CHO",
+        "Laboratory.Date",
+        "Patient.Birthday"
+    ],
+    "94": [
+        "Examination.ID",
+        "Laboratory.PT",
+        "Examination.Examination Date",
+        "Laboratory.ID",
+        "Laboratory.GPT",
+        "Laboratory.ALB",
+        "Laboratory.Date"
+    ],
+    "95": [
+        "Examination.ANA",
+        "Examination.Thrombosis",
+        "Examination.aCL IgM"
+    ],
+    "96": [
+        "Patient.Diagnosis",
+        "Patient.Admission",
+        "Laboratory.ID",
+        "Laboratory.T-BIL",
+        "Patient.SEX",
+        "Patient.ID",
+        "Laboratory.Date",
+        "Patient.Description",
+        "Patient.First Date",
+        "Patient.Birthday"
+    ],
+    "97": [
+        "Patient.Diagnosis",
+        "Laboratory.ID",
+        "Laboratory.ALB",
+        "Patient.SEX",
+        "Patient.ID",
+        "Laboratory.PLT"
+    ],
+    "98": [
+        "Patient.SEX",
+        "Patient.Diagnosis"
+    ],
+    "99": [
+        "Patient.SEX",
+        "Patient.Diagnosis",
+        "Patient.Birthday"
+    ],
+    "100": [
+        "Laboratory.UA",
+        "Laboratory.ID",
+        "Patient.SEX",
+        "Patient.ID",
+        "Laboratory.Date"
+    ],
+    "101": [
+        "Laboratory.PT",
+        "Laboratory.GPT",
+        "Laboratory.ID",
+        "Patient.SEX",
+        "Patient.ID"
+    ],
+    "102": [
+        "Patient.Diagnosis",
+        "Laboratory.PT",
+        "Laboratory.ID",
+        "Laboratory.GPT",
+        "Patient.ID",
+        "Patient.Birthday"
+    ],
+    "103": [
+        "Laboratory.ID",
+        "Patient.SEX",
+        "Patient.ID",
+        "Laboratory.UN",
+        "Patient.Birthday"
+    ],
+    "104": [
+        "Laboratory.T-BIL",
+        "Patient.SEX",
+        "Patient.ID",
+        "Laboratory.ID"
+    ],
+    "105": [
+        "Laboratory.ID",
+        "Patient.SEX",
+        "Patient.ID",
+        "Laboratory.T-CHO",
+        "Patient.Birthday"
+    ],
+    "106": [
+        "Laboratory.TG",
+        "Laboratory.ID",
+        "Patient.ID",
+        "Laboratory.UN",
+        "Patient.Birthday"
+    ],
+    "107": [
+        "Laboratory.CPK",
+        "Laboratory.ID",
+        "Patient.SEX",
+        "Patient.ID",
+        "Laboratory.UN",
+        "Patient.Birthday"
+    ],
+    "108": [
+        "Laboratory.T-CHO",
+        "Laboratory.ID",
+        "Patient.SEX",
+        "Patient.ID",
+        "Laboratory.GLU",
+        "Patient.Birthday"
+    ],
+    "109": [
+        "Patient.Diagnosis",
+        "Laboratory.ID",
+        "Patient.ID",
+        "Laboratory.RBC",
+        "Patient.Birthday"
+    ],
+    "110": [
+        "Patient.Diagnosis",
+        "Laboratory.HGB",
+        "Laboratory.ID",
+        "Patient.SEX",
+        "Patient.ID",
+        "Patient.Birthday"
+    ],
+    "111": [
+        "Laboratory.HCT",
+        "Laboratory.ID",
+        "Patient.ID",
+        "Laboratory.UN",
+        "Patient.Birthday"
+    ],
+    "112": [
+        "Laboratory.PLT",
+        "Laboratory.ID"
+    ],
+    "113": [
+        "Patient.Birthday",
+        "Laboratory.ID",
+        "Patient.SEX",
+        "Patient.ID",
+        "Laboratory.Date",
+        "Laboratory.PLT"
+    ],
+    "114": [
+        "Laboratory.PT",
+        "Laboratory.ID",
+        "Patient.SEX",
+        "Patient.ID",
+        "Laboratory.UN",
+        "Patient.Birthday"
+    ],
+    "115": [
+        "Laboratory.WBC",
+        "Laboratory.ID",
+        "Patient.SEX",
+        "Patient.ID",
+        "Laboratory.UN",
+        "Laboratory.FG"
+    ],
+    "116": [
+        "Laboratory.IGG",
+        "Laboratory.UN",
+        "Laboratory.ID"
+    ],
+    "117": [
+        "Examination.ID",
+        "Laboratory.ID",
+        "Patient.ID",
+        "Laboratory.IGG",
+        "Laboratory.UN",
+        "Examination.Symptoms"
+    ],
+    "118": [
+        "Laboratory.Date",
+        "Laboratory.IGA",
+        "Laboratory.ID",
+        "Patient.ID",
+        "Laboratory.UN",
+        "Patient.First Date"
+    ],
+    "119": [
+        "Patient.Diagnosis",
+        "Laboratory.ID",
+        "Patient.ID",
+        "Laboratory.IGM",
+        "Laboratory.UN"
+    ],
+    "120": [
+        "Laboratory.CRP",
+        "Laboratory.ID",
+        "Patient.ID",
+        "Laboratory.UN",
+        "Patient.Description"
+    ],
+    "121": [
+        "Laboratory.CRE",
+        "Laboratory.ID",
+        "Patient.ID",
+        "Laboratory.UN",
+        "Patient.Birthday"
+    ],
+    "122": [
+        "Patient.Admission",
+        "Laboratory.RNP",
+        "Laboratory.ID",
+        "Patient.ID",
+        "Laboratory.UN"
+    ],
+    "123": [
+        "Examination.ID",
+        "Laboratory.ID",
+        "Examination.Thrombosis",
+        "Laboratory.SM",
+        "Laboratory.UN"
+    ],
+    "124": [
+        "Examination.ID",
+        "Laboratory.SC170",
+        "Laboratory.ID",
+        "Patient.SEX",
+        "Patient.ID",
+        "Laboratory.UN",
+        "Examination.Symptoms"
+    ],
+    "125": [
+        "Laboratory.SSB",
+        "Laboratory.ID",
+        "Laboratory.CENTROMEA",
+        "Patient.SEX",
+        "Patient.ID",
+        "Laboratory.UN"
+    ],
+    "126": [
+        "Laboratory.GOT",
+        "Patient.Birthday",
+        "Patient.ID",
+        "Laboratory.ID"
+    ],
+    "127": [
+        "Examination.ID",
+        "Laboratory.CPK",
+        "Laboratory.ID",
+        "Patient.ID",
+        "Examination.LAC",
+        "Laboratory.UN",
+        "Examination.RVVT",
+        "Examination.KCT"
+    ],
+    "128": [
+        "League.id",
+        "Match.season",
+        "Match.away_team_goal",
+        "Match.goal",
+        "League.name",
+        "Match.home_team_goal",
+        "Match.league_id",
+        "Match.id"
+    ],
+    "129": [
+        "Match.away_team_api_id",
+        "League.id",
+        "Team.id",
+        "Team.team_long_name",
+        "Match.away_team_goal",
+        "Match.goal",
+        "League.name",
+        "Match.home_team_goal",
+        "Match.season",
+        "Match.league_id",
+        "Team.team_api_id",
+        "Match.id"
+    ],
+    "130": [
+        "Team_Attributes.buildUpPlaySpeed",
+        "Team.id",
+        "Team.team_long_name",
+        "Team_Attributes.team_api_id",
+        "Team.team_api_id",
+        "Team_Attributes.date",
+        "Team_Attributes.id"
+    ],
+    "131": [
+        "League.id",
+        "Match.season",
+        "Match.away_team_goal",
+        "Match.goal",
+        "League.name",
+        "Match.home_team_goal",
+        "Match.league_id",
+        "Match.id"
+    ],
+    "132": [
+        "Player_Attributes.id",
+        "Player_Attributes.sprint_speed",
+        "Player.player_name",
+        "Player.id",
+        "Player_Attributes.date",
+        "Player.player_api_id",
+        "Player_Attributes.player_api_id",
+        "Player.birthday"
+    ],
+    "133": [
+        "Match.id",
+        "Match.league_id",
+        "League.id",
+        "League.name"
+    ],
+    "134": [
+        "Team_Attributes.buildUpPlaySpeed",
+        "Team.id",
+        "Team_Attributes.team_fifa_api_id",
+        "Team.team_fifa_api_id",
+        "Team_Attributes.id"
+    ],
+    "135": [
+        "Team.id",
+        "Team.team_long_name",
+        "Team_Attributes.team_api_id",
+        "Team.team_api_id",
+        "Team_Attributes.buildUpPlayPassing",
+        "Team_Attributes.date",
+        "Team_Attributes.id"
+    ],
+    "136": [
+        "Player_Attributes.id",
+        "Player_Attributes.preferred_foot",
+        "Player_Attributes.player_fifa_api_id",
+        "Player.id",
+        "Player.player_api_id",
+        "Player.birthday",
+        "Player.player_fifa_api_id",
+        "Player_Attributes.player_api_id"
+    ],
+    "137": [
+        "Player_Attributes.id",
+        "Player_Attributes.player_fifa_api_id",
+        "Player.player_name",
+        "Player.id",
+        "Player_Attributes.long_shots",
+        "Player.player_api_id",
+        "Player.player_fifa_api_id",
+        "Player_Attributes.player_api_id"
+    ],
+    "138": [
+        "Player_Attributes.id",
+        "Player_Attributes.player_fifa_api_id",
+        "Player.player_name",
+        "Player.id",
+        "Player.player_api_id",
+        "Player_Attributes.heading_accuracy",
+        "Player.player_fifa_api_id",
+        "Player_Attributes.player_api_id",
+        "Player.height"
+    ],
+    "139": [
+        "League.id",
+        "Match.season",
+        "Match.away_team_goal",
+        "Match.goal",
+        "League.name",
+        "Match.home_team_goal",
+        "Match.league_id",
+        "Match.id"
+    ],
+    "140": [
+        "Player.player_name",
+        "Player.id",
+        "Player.birthday",
+        "Player.player_api_id"
+    ],
+    "141": [
+        "Player_Attributes.id",
+        "Player.player_name",
+        "Player.id",
+        "Player_Attributes.date",
+        "Player_Attributes.overall_rating",
+        "Player.player_api_id",
+        "Player_Attributes.player_api_id"
+    ],
+    "142": [
+        "Country.id",
+        "Match.season",
+        "Match.goal",
+        "Match.home_team_goal",
+        "Match.id",
+        "Country.name",
+        "Match.country_id"
+    ],
+    "143": [
+        "Player_Attributes.id",
+        "Player.id",
+        "Player.player_api_id",
+        "Player_Attributes.finishing",
+        "Player_Attributes.player_api_id",
+        "Player.height"
+    ],
+    "144": [
+        "Player_Attributes.id",
+        "Player.id",
+        "Player_Attributes.date",
+        "Player_Attributes.overall_rating",
+        "Player.player_api_id",
+        "Player_Attributes.player_api_id",
+        "Player.height"
+    ],
+    "145": [
+        "Player_Attributes.ball_control",
+        "Player_Attributes.id",
+        "Player.player_name",
+        "Player.id",
+        "Player.player_api_id",
+        "Player_Attributes.player_api_id"
+    ],
+    "146": [
+        "Player.player_name",
+        "Player.birthday"
+    ],
+    "147": [
+        "Player.player_name",
+        "Player.height"
+    ],
+    "148": [
+        "Player_Attributes.id",
+        "Player_Attributes.preferred_foot",
+        "Player.id",
+        "Player.player_api_id",
+        "Player_Attributes.attacking_work_rate",
+        "Player_Attributes.player_api_id"
+    ],
+    "149": [
+        "Player_Attributes.id",
+        "Player_Attributes.defensive_work_rate",
+        "Player.id",
+        "Player.player_api_id",
+        "Player_Attributes.player_api_id",
+        "Player.birthday"
+    ],
+    "150": [
+        "Player_Attributes.id",
+        "Player.player_name",
+        "Player.id",
+        "Player.player_api_id",
+        "Player_Attributes.dribbling",
+        "Player_Attributes.volleys",
+        "Player_Attributes.player_api_id"
+    ],
+    "151": [
+        "League.id",
+        "Match.date",
+        "League.name",
+        "Match.league_id",
+        "Match.id"
+    ],
+    "152": [
+        "League.id",
+        "Match.season",
+        "League.name",
+        "Match.league_id",
+        "Match.id"
+    ],
+    "153": [
+        "Player_Attributes.id",
+        "Player.player_name",
+        "Player.id",
+        "Player_Attributes.date",
+        "Player_Attributes.overall_rating",
+        "Player.player_api_id",
+        "Player_Attributes.player_api_id"
+    ],
+    "154": [
+        "Player_Attributes.id",
+        "Player.player_name",
+        "Player.id",
+        "Player_Attributes.overall_rating",
+        "Player.player_api_id",
+        "Player_Attributes.player_api_id"
+    ],
+    "155": [
+        "Team.id",
+        "Team.team_long_name",
+        "Team_Attributes.team_api_id",
+        "Team_Attributes.chanceCreationPassingClass",
+        "Team.team_api_id",
+        "Team_Attributes.chanceCreationPassing",
+        "Team_Attributes.id"
+    ],
+    "156": [
+        "Player_Attributes.id",
+        "Player.player_name",
+        "Player.id",
+        "Player_Attributes.date",
+        "Player_Attributes.overall_rating",
+        "Player.player_api_id",
+        "Player_Attributes.player_api_id",
+        "Player.birthday"
+    ],
+    "157": [
+        "Player_Attributes.id",
+        "Player.player_name",
+        "Player.id",
+        "Player_Attributes.date",
+        "Player_Attributes.overall_rating",
+        "Player.player_api_id",
+        "Player_Attributes.player_api_id"
+    ],
+    "158": [
+        "Player_Attributes.id",
+        "Player.player_name",
+        "Player.id",
+        "Player_Attributes.date",
+        "Player.player_api_id",
+        "Player_Attributes.attacking_work_rate",
+        "Player_Attributes.player_api_id"
+    ],
+    "159": [
+        "Player_Attributes.id",
+        "Player.player_name",
+        "Player.id",
+        "Player_Attributes.date",
+        "Player.player_api_id",
+        "Player_Attributes.player_api_id",
+        "Player_Attributes.crossing"
+    ],
+    "160": [
+        "Team.id",
+        "Team.team_long_name",
+        "Team_Attributes.team_api_id",
+        "Team.team_api_id",
+        "Team_Attributes.buildUpPlayPassingClass",
+        "Team_Attributes.buildUpPlayPassing",
+        "Team_Attributes.date",
+        "Team_Attributes.id"
+    ],
+    "161": [
+        "Team_Attributes.defenceAggression",
+        "Team_Attributes.defenceAggressionClass",
+        "Team.id",
+        "Team.team_long_name",
+        "Team_Attributes.team_api_id",
+        "Team.team_api_id",
+        "Team_Attributes.date",
+        "Team_Attributes.id"
+    ],
+    "162": [
+        "Player_Attributes.id",
+        "Player.player_name",
+        "Player.id",
+        "Player_Attributes.date",
+        "Player_Attributes.overall_rating",
+        "Player.player_api_id",
+        "Player_Attributes.player_api_id"
+    ],
+    "163": [
+        "Player_Attributes.id",
+        "Player.player_name",
+        "Player.id",
+        "Player_Attributes.date",
+        "Player_Attributes.overall_rating",
+        "Player.player_api_id",
+        "Player_Attributes.player_api_id"
+    ],
+    "164": [
+        "Player.player_name",
+        "Player.height"
+    ],
+    "165": [
+        "Player_Attributes.id",
+        "Player.player_name",
+        "Player.id",
+        "Player_Attributes.overall_rating",
+        "Player.player_api_id",
+        "Player_Attributes.player_api_id"
+    ],
+    "166": [
+        "Player_Attributes.id",
+        "Player.player_name",
+        "Player.id",
+        "Player.player_api_id",
+        "Player_Attributes.attacking_work_rate",
+        "Player_Attributes.player_api_id"
+    ],
+    "167": [
+        "Team.team_short_name",
+        "Team.id",
+        "Team_Attributes.team_api_id",
+        "Team_Attributes.chanceCreationPassingClass",
+        "Team.team_api_id",
+        "Team_Attributes.chanceCreationPassing",
+        "Team_Attributes.id"
+    ],
+    "168": [
+        "Player.player_name",
+        "Player.birthday"
+    ],
+    "169": [
+        "Player_Attributes.id",
+        "Player.id",
+        "Player_Attributes.jumping"
+    ],
+    "170": [
+        "Player_Attributes.id",
+        "Player.id",
+        "Player_Attributes.preferred_foot",
+        "Player_Attributes.potential"
+    ],
+    "171": [
+        "Player_Attributes.id",
+        "Player_Attributes.preferred_foot",
+        "Player.id",
+        "Player.player_api_id",
+        "Player_Attributes.player_api_id",
+        "Player_Attributes.crossing"
+    ],
+    "172": [
+        "Match.away_team_api_id",
+        "League.id",
+        "Match.home_team_api_id",
+        "Team.id",
+        "Team.team_long_name",
+        "Match.away_team_goal",
+        "Match.date",
+        "League.name",
+        "Match.home_team_goal",
+        "Match.goal",
+        "Match.league_id",
+        "Team.team_api_id",
+        "Match.id"
+    ],
+    "173": [
+        "Team_Attributes.buildUpPlaySpeed",
+        "Team.id",
+        "Team.team_long_name",
+        "Team_Attributes.buildUpPlaySpeedClass",
+        "Team_Attributes.team_api_id",
+        "Team.team_api_id",
+        "Team_Attributes.id"
+    ],
+    "174": [
+        "Player_Attributes.id",
+        "Player.player_name",
+        "Player.id",
+        "Player_Attributes.date",
+        "Player.weight",
+        "Player.player_api_id",
+        "Player_Attributes.curve",
+        "Player_Attributes.finishing",
+        "Player_Attributes.player_api_id"
+    ],
+    "175": [
+        "League.id",
+        "Match.season",
+        "League.name",
+        "Match.league_id",
+        "Match.id"
+    ],
+    "176": [
+        "Match.away_team_api_id",
+        "Team.id",
+        "Team.team_long_name",
+        "Match.away_team_goal",
+        "Match.goal",
+        "Team.team_api_id",
+        "Match.id"
+    ],
+    "177": [
+        "Player_Attributes.id",
+        "Player.player_name",
+        "Player.id",
+        "Player_Attributes.overall_rating",
+        "Player.player_api_id",
+        "Player_Attributes.player_api_id"
+    ],
+    "178": [
+        "Player_Attributes.id",
+        "Player.id",
+        "Player_Attributes.overall_rating",
+        "Player.player_api_id",
+        "Player_Attributes.player_api_id",
+        "Player.height"
+    ],
+    "179": [
+        "qualifying.q1",
+        "drivers.driverRef",
+        "drivers.driverId",
+        "qualifying.q2",
+        "qualifying.raceId",
+        "qualifying.driverId"
+    ],
+    "180": [
+        "drivers.driverId",
+        "qualifying.q2",
+        "drivers.surname",
+        "qualifying.raceId",
+        "qualifying.driverId"
+    ],
+    "181": [
+        "races.round",
+        "races.date",
+        "circuits.name",
+        "circuits.circuitId",
+        "races.circuitId",
+        "races.time",
+        "circuits.country",
+        "races.name",
+        "races.year"
+    ],
+    "182": [
+        "circuits.circuitId",
+        "races.circuitId",
+        "circuits.name",
+        "circuits.location",
+        "circuits.lat",
+        "circuits.country",
+        "races.name",
+        "circuits.lng"
+    ],
+    "183": [
+        "circuits.circuitId",
+        "circuits.name",
+        "races.circuitId",
+        "circuits.lat",
+        "races.name",
+        "circuits.lng"
+    ],
+    "184": [
+        "qualifying.q1",
+        "drivers.forename",
+        "drivers.driverId",
+        "drivers.surname",
+        "qualifying.raceId",
+        "qualifying.driverId"
+    ],
+    "185": [
+        "drivers.driverId",
+        "qualifying.q3",
+        "qualifying.number",
+        "drivers.number",
+        "qualifying.raceId",
+        "qualifying.driverId"
+    ],
+    "186": [
+        "races.raceId",
+        "status.statusId",
+        "results.laps",
+        "status.status",
+        "results.raceId",
+        "results.statusId",
+        "races.name",
+        "races.year"
+    ],
+    "187": [
+        "results.driverId",
+        "drivers.forename",
+        "drivers.driverId",
+        "results.time",
+        "results.raceId",
+        "drivers.surname",
+        "drivers.dob"
+    ],
+    "188": [
+        "lapTimes.driverId",
+        "drivers.forename",
+        "drivers.driverId",
+        "drivers.url",
+        "lapTimes.time",
+        "lapTimes.lap",
+        "drivers.surname",
+        "lapTimes.raceId"
+    ],
+    "189": [
+        "circuits.circuitId",
+        "races.circuitId",
+        "circuits.name",
+        "circuits.location",
+        "circuits.lat",
+        "circuits.country",
+        "races.name",
+        "circuits.lng"
+    ],
+    "190": [
+        "constructors.constructorId",
+        "constructors.url",
+        "constructorResults.points",
+        "constructorResults.constructorId",
+        "constructorResults.raceId"
+    ],
+    "191": [
+        "drivers.code",
+        "drivers.driverId",
+        "qualifying.q3",
+        "qualifying.raceId",
+        "qualifying.driverId"
+    ],
+    "192": [
+        "seasons.url",
+        "races.raceId",
+        "races.url",
+        "seasons.year",
+        "races.year"
+    ],
+    "193": [
+        "status.statusId",
+        "results.driverId",
+        "drivers.forename",
+        "drivers.driverRef",
+        "drivers.driverId",
+        "status.status",
+        "results.raceId",
+        "results.statusId",
+        "drivers.surname",
+        "drivers.dob"
+    ],
+    "194": [
+        "results.driverId",
+        "drivers.nationality",
+        "results.fastestLap",
+        "drivers.driverId",
+        "results.fastestLapSpeed"
+    ],
+    "195": [
+        "races.raceId",
+        "results.driverId",
+        "drivers.forename",
+        "results.fastestLap",
+        "drivers.driverId",
+        "results.raceId",
+        "results.fastestLapSpeed",
+        "races.name",
+        "drivers.surname"
+    ],
+    "196": [
+        "races.raceId",
+        "status.statusId",
+        "results.driverId",
+        "drivers.forename",
+        "races.round",
+        "drivers.driverId",
+        "status.status",
+        "results.position",
+        "results.raceId",
+        "results.statusId",
+        "races.date",
+        "races.name",
+        "drivers.surname"
+    ],
+    "197": [
+        "races.round",
+        "races.time",
+        "races.date",
+        "races.name",
+        "races.year"
+    ],
+    "198": [
+        "results.driverId",
+        "drivers.forename",
+        "drivers.driverId",
+        "results.points",
+        "drivers.surname"
+    ],
+    "199": [
+        "races.raceId",
+        "races.round",
+        "lapTimes.driverId",
+        "drivers.forename",
+        "lapTimes.milliseconds",
+        "drivers.driverId",
+        "lapTimes.time",
+        "races.time",
+        "races.name",
+        "races.date",
+        "lapTimes.lap",
+        "drivers.surname",
+        "races.year",
+        "lapTimes.raceId"
+    ],
+    "200": [
+        "races.raceId",
+        "lapTimes.driverId",
+        "drivers.forename",
+        "lapTimes.milliseconds",
+        "drivers.driverId",
+        "lapTimes.time",
+        "races.time",
+        "races.name",
+        "lapTimes.lap",
+        "drivers.surname",
+        "races.year",
+        "lapTimes.raceId"
+    ],
+    "201": [
+        "races.raceId",
+        "races.round",
+        "results.driverId",
+        "drivers.driverId",
+        "results.raceId",
+        "results.position",
+        "races.name",
+        "drivers.surname",
+        "races.year"
+    ],
+    "202": [
+        "driverStandings.wins",
+        "drivers.nationality",
+        "drivers.forename",
+        "drivers.driverId",
+        "driverStandings.points",
+        "driverStandings.driverStandingsId",
+        "driverStandings.driverId",
+        "drivers.surname"
+    ],
+    "203": [
+        "drivers.surname",
+        "drivers.dob",
+        "drivers.nationality",
+        "drivers.forename"
+    ],
+    "204": [
+        "races.round",
+        "circuits.name",
+        "circuits.circuitId",
+        "races.time",
+        "races.circuitId",
+        "races.date",
+        "races.name",
+        "circuits.location",
+        "races.year"
+    ],
+    "205": [
+        "races.raceId",
+        "races.date",
+        "races.round",
+        "drivers.forename",
+        "drivers.driverId",
+        "driverStandings.raceId",
+        "drivers.number",
+        "driverStandings.driverId",
+        "races.name",
+        "drivers.surname",
+        "driverStandings.position",
+        "races.year"
+    ],
+    "206": [
+        "races.raceId",
+        "results.driverId",
+        "results.milliseconds",
+        "drivers.forename",
+        "drivers.driverId",
+        "results.raceId",
+        "races.name",
+        "drivers.surname",
+        "races.year"
+    ],
+    "207": [
+        "races.raceId",
+        "races.round",
+        "results.driverId",
+        "drivers.forename",
+        "drivers.driverId",
+        "results.points",
+        "results.raceId",
+        "races.date",
+        "races.name",
+        "drivers.surname"
+    ],
+    "208": [
+        "circuits.name",
+        "races.circuitId",
+        "circuits.circuitId",
+        "circuits.country",
+        "races.name"
+    ],
+    "209": [
+        "circuits.lat",
+        "circuits.name",
+        "circuits.lng"
+    ],
+    "210": [
+        "circuits.name",
+        "circuits.circuitRef"
+    ],
+    "211": [
+        "circuits.country",
+        "drivers.dob",
+        "drivers.nationality"
+    ],
+    "212": [
+        "results.positionOrder",
+        "races.raceId",
+        "drivers.driverRef",
+        "results.driverId",
+        "drivers.forename",
+        "drivers.driverId",
+        "results.raceId",
+        "results.position",
+        "races.name",
+        "drivers.surname",
+        "races.year"
+    ],
+    "213": [
+        "results.positionOrder",
+        "races.raceId",
+        "races.round",
+        "results.driverId",
+        "drivers.forename",
+        "drivers.driverId",
+        "results.position",
+        "results.raceId",
+        "results.rank",
+        "races.date",
+        "races.name",
+        "drivers.surname",
+        "races.year"
+    ],
+    "214": [
+        "races.raceId",
+        "results.fastestLap",
+        "results.raceId",
+        "results.fastestLapSpeed",
+        "races.name",
+        "races.year"
+    ],
+    "215": [
+        "results.positionOrder",
+        "races.raceId",
+        "results.driverId",
+        "drivers.forename",
+        "drivers.driverId",
+        "results.raceId",
+        "results.rank",
+        "results.position",
+        "races.name",
+        "drivers.surname",
+        "races.year"
+    ],
+    "216": [
+        "results.positionOrder",
+        "races.raceId",
+        "races.time",
+        "results.time",
+        "results.raceId",
+        "results.position",
+        "races.name",
+        "races.year"
+    ],
+    "217": [
+        "races.raceId",
+        "status.statusId",
+        "results.driverId",
+        "drivers.driverId",
+        "constructors.name",
+        "constructors.constructorRef",
+        "status.status",
+        "results.raceId",
+        "results.statusId",
+        "races.name",
+        "races.year"
+    ],
+    "218": [
+        "results.positionOrder",
+        "races.raceId",
+        "status.statusId",
+        "results.milliseconds",
+        "status.status",
+        "results.raceId",
+        "results.statusId",
+        "results.position",
+        "races.name",
+        "races.year"
+    ],
+    "219": [
+        "circuits.country",
+        "circuits.location"
+    ],
+    "220": [
+        "constructorResults.points",
+        "constructors.constructorId",
+        "constructors.nationality",
+        "constructorResults.constructorId"
+    ],
+    "221": [
+        "constructors.constructorId",
+        "constructors.name",
+        "constructorResults.points",
+        "constructorResults.constructorId",
+        "constructorResults.raceId"
+    ],
+    "222": [
+        "constructors.constructorId",
+        "constructors.nationality",
+        "constructorResults.points",
+        "constructorResults.constructorId",
+        "constructorResults.raceId"
+    ],
+    "223": [
+        "races.raceId",
+        "status.statusId",
+        "results.driverId",
+        "drivers.nationality",
+        "drivers.driverId",
+        "status.status",
+        "results.raceId",
+        "results.statusId",
+        "races.year"
+    ],
+    "224": [
+        "results.positionOrder",
+        "races.raceId",
+        "races.time",
+        "results.time",
+        "results.raceId",
+        "results.position",
+        "races.year"
+    ],
+    "225": [
+        "results.positionOrder",
+        "results.number",
+        "races.raceId",
+        "races.round",
+        "results.driverId",
+        "drivers.forename",
+        "results.fastestLap",
+        "drivers.driverId",
+        "races.time",
+        "results.time",
+        "results.raceId",
+        "driverStandings.raceId",
+        "drivers.number",
+        "results.position",
+        "races.name",
+        "drivers.surname",
+        "driverStandings.position",
+        "races.year"
+    ],
+    "226": [
+        "races.raceId",
+        "results.fastestLap",
+        "results.raceId",
+        "results.fastestLapSpeed",
+        "races.name",
+        "races.year"
+    ],
+    "227": [
+        "races.raceId",
+        "results.laps",
+        "results.driverId",
+        "drivers.driverId",
+        "races.time",
+        "results.time",
+        "results.raceId",
+        "driverStandings.raceId",
+        "driverStandings.driverId",
+        "drivers.dob",
+        "races.year"
+    ],
+    "228": [
+        "lapTimes.driverId",
+        "drivers.nationality",
+        "lapTimes.milliseconds",
+        "drivers.driverId",
+        "lapTimes.lap"
+    ],
+    "229": [
+        "drivers.code",
+        "drivers.nationality"
+    ],
+    "230": [
+        "drivers.driverId",
+        "drivers.dob",
+        "drivers.nationality"
+    ],
+    "231": [
+        "drivers.dob",
+        "drivers.driverRef",
+        "drivers.nationality"
+    ],
+    "232": [
+        "drivers.code",
+        "results.driverId",
+        "results.fastestLap",
+        "drivers.driverId",
+        "results.time",
+        "results.rank",
+        "results.fastestLapTime",
+        "drivers.dob"
+    ],
+    "233": [
+        "status.statusId",
+        "status.status",
+        "results.time",
+        "results.raceId",
+        "results.statusId"
+    ],
+    "234": [
+        "circuits.name",
+        "circuits.location",
+        "circuits.lat",
+        "circuits.country",
+        "circuits.lng"
+    ],
+    "235": [
+        "races.year",
+        "races.raceId",
+        "drivers.forename",
+        "drivers.driverId",
+        "races.time",
+        "qualifying.qualifyId",
+        "races.date",
+        "races.name",
+        "drivers.surname",
+        "drivers.dob",
+        "qualifying.raceId",
+        "qualifying.driverId"
+    ],
+    "236": [
+        "pitStops.time",
+        "drivers.nationality",
+        "drivers.forename",
+        "drivers.driverId",
+        "pitStops.stop",
+        "pitStops.milliseconds",
+        "pitStops.driverId",
+        "drivers.surname",
+        "drivers.dob"
+    ],
+    "237": [
+        "results.positionOrder",
+        "races.raceId",
+        "races.time",
+        "results.time",
+        "results.raceId",
+        "results.position",
+        "races.name",
+        "races.year"
+    ],
+    "238": [
+        "races.raceId",
+        "constructors.constructorId",
+        "constructors.name",
+        "races.time",
+        "races.url",
+        "constructors.constructorRef",
+        "constructors.url",
+        "results.time",
+        "results.raceId",
+        "results.constructorId",
+        "races.name",
+        "races.year"
+    ],
+    "239": [
+        "hero_power.power_id",
+        "superpower.power_name",
+        "superhero.superhero_name",
+        "hero_power.hero_id",
+        "superpower.id",
+        "superhero.id"
+    ],
+    "240": [
+        "races.raceId",
+        "constructors.constructorId",
+        "constructors.name",
+        "constructors.nationality",
+        "constructorResults.points",
+        "constructorResults.constructorId",
+        "races.name",
+        "races.year",
+        "constructorResults.raceId"
+    ],
+    "241": [
+        "races.year",
+        "races.raceId",
+        "drivers.forename",
+        "drivers.driverId",
+        "circuits.circuitId",
+        "races.circuitId",
+        "qualifying.q3",
+        "circuits.name",
+        "races.name",
+        "drivers.surname",
+        "qualifying.raceId",
+        "qualifying.driverId"
+    ],
+    "242": [
+        "races.raceId",
+        "results.driverId",
+        "drivers.forename",
+        "drivers.nationality",
+        "drivers.driverId",
+        "results.raceId",
+        "races.date",
+        "races.name",
+        "drivers.surname",
+        "drivers.dob"
+    ],
+    "243": [
+        "results.number",
+        "races.raceId",
+        "status.statusId",
+        "results.driverId",
+        "status.status",
+        "results.raceId",
+        "results.statusId",
+        "races.name"
+    ],
+    "244": [
+        "lapTimes.driverId",
+        "drivers.forename",
+        "lapTimes.milliseconds",
+        "drivers.driverId",
+        "lapTimes.time",
+        "lapTimes.lap",
+        "drivers.surname"
+    ],
+    "245": [
+        "results.driverId",
+        "drivers.driverId",
+        "races.time",
+        "races.raceId",
+        "circuits.circuitId",
+        "constructors.constructorId",
+        "races.circuitId",
+        "constructors.name",
+        "races.year",
+        "drivers.forename",
+        "results.time",
+        "drivers.surname",
+        "results.fastestLap",
+        "circuits.name",
+        "results.raceId",
+        "results.fastestLapTime",
+        "results.constructorId",
+        "circuits.country",
+        "races.name"
+    ],
+    "246": [
+        "hero_power.power_id",
+        "superpower.power_name",
+        "superhero.height_cm",
+        "hero_power.hero_id",
+        "superpower.id",
+        "superhero.id"
+    ],
+    "247": [
+        "hero_power.power_id",
+        "superpower.power_name",
+        "hero_power.hero_id",
+        "colour.colour",
+        "superpower.id",
+        "superhero.id",
+        "colour.id",
+        "superhero.eye_colour_id"
+    ],
+    "248": [
+        "superhero.hair_colour_id",
+        "superhero.superhero_name",
+        "colour.colour",
+        "superhero.id",
+        "colour.id",
+        "superhero.eye_colour_id"
+    ],
+    "249": [
+        "publisher.publisher_name",
+        "superhero.height_cm",
+        "superhero.superhero_name",
+        "superhero.publisher_id",
+        "superhero.id",
+        "publisher.id"
+    ],
+    "250": [
+        "publisher.publisher_name",
+        "superhero.publisher_id",
+        "superhero.eye_colour_id",
+        "colour.colour",
+        "superhero.id",
+        "colour.id",
+        "publisher.id"
+    ],
+    "251": [
+        "hero_power.power_id",
+        "superpower.power_name",
+        "publisher.publisher_name",
+        "superhero.superhero_name",
+        "superhero.publisher_id",
+        "hero_power.hero_id",
+        "superpower.id",
+        "superhero.id",
+        "publisher.id"
+    ],
+    "252": [
+        "superhero.weight_kg",
+        "attribute.id",
+        "superhero.id",
+        "publisher.publisher_name",
+        "superhero.publisher_id",
+        "attribute.attribute_name",
+        "hero_attribute.attribute_value",
+        "hero_attribute.attribute_id",
+        "hero_attribute.hero_id",
+        "publisher.id"
+    ],
+    "253": [
+        "publisher.publisher_name",
+        "superhero.publisher_id",
+        "superhero.eye_colour_id",
+        "colour.colour",
+        "superhero.id",
+        "colour.id",
+        "publisher.id"
+    ],
+    "254": [
+        "hero_attribute.attribute_id",
+        "attribute.id",
+        "superhero.superhero_name",
+        "attribute.attribute_name",
+        "hero_attribute.attribute_value",
+        "superhero.id",
+        "hero_attribute.hero_id"
+    ],
+    "255": [
+        "race.id",
+        "superhero.superhero_name",
+        "superhero.race_id",
+        "race.race",
+        "superhero.id"
+    ],
+    "256": [
+        "superhero.weight_kg",
+        "hero_attribute.attribute_id",
+        "attribute.id",
+        "superhero.superhero_name",
+        "superhero.height_cm",
+        "attribute.attribute_name",
+        "hero_attribute.attribute_value",
+        "superhero.id",
+        "hero_attribute.hero_id"
+    ],
+    "257": [
+        "hero_power.power_id",
+        "superpower.power_name",
+        "superhero.superhero_name",
+        "hero_power.hero_id",
+        "superpower.id",
+        "superhero.id"
+    ],
+    "258": [
+        "hero_attribute.attribute_id",
+        "attribute.id",
+        "superhero.gender_id",
+        "hero_attribute.hero_id",
+        "gender.gender",
+        "attribute.attribute_name",
+        "hero_attribute.attribute_value",
+        "superhero.id",
+        "gender.id"
+    ],
+    "259": [
+        "alignment.alignment",
+        "publisher.publisher_name",
+        "alignment.id",
+        "superhero.alignment_id",
+        "superhero.publisher_id",
+        "superhero.id",
+        "publisher.id"
+    ],
+    "260": [
+        "superhero.id",
+        "publisher.publisher_name",
+        "superhero.publisher_id",
+        "publisher.id"
+    ],
+    "261": [
+        "superhero.id",
+        "publisher.publisher_name",
+        "publisher.id"
+    ],
+    "262": [
+        "superhero.full_name"
+    ],
+    "263": [
+        "superhero.weight_kg",
+        "superhero.gender_id",
+        "gender.gender",
+        "superhero.id",
+        "gender.id"
+    ],
+    "264": [
+        "hero_power.power_id",
+        "superpower.power_name",
+        "superhero.superhero_name",
+        "superhero.gender_id",
+        "gender.gender",
+        "hero_power.hero_id",
+        "superpower.id",
+        "superhero.id",
+        "gender.id"
+    ],
+    "265": [
+        "superhero.height_cm",
+        "superhero.superhero_name",
+        "colour.colour",
+        "superhero.id",
+        "colour.id",
+        "superhero.eye_colour_id"
+    ],
+    "266": [
+        "race.id",
+        "superhero.hair_colour_id",
+        "superhero.height_cm",
+        "superhero.race_id",
+        "colour.colour",
+        "race.race",
+        "superhero.id",
+        "colour.id"
+    ],
+    "267": [
+        "publisher.publisher_name",
+        "superhero.height_cm",
+        "superhero.publisher_id",
+        "superhero.id",
+        "publisher.id"
+    ],
+    "268": [
+        "superhero.weight_kg",
+        "superhero.superhero_name",
+        "superhero.gender_id",
+        "gender.gender",
+        "superhero.id",
+        "gender.id"
+    ],
+    "269": [
+        "superpower.power_name",
+        "hero_power.power_id",
+        "hero_power.hero_id",
+        "superpower.id",
+        "superhero.id"
+    ],
+    "270": [
+        "superpower.power_name",
+        "hero_power.power_id",
+        "hero_power.hero_id",
+        "superpower.id",
+        "superhero.id"
+    ],
+    "271": [
+        "hero_attribute.attribute_id",
+        "attribute.id",
+        "superhero.full_name",
+        "attribute.attribute_name",
+        "hero_attribute.attribute_value",
+        "superhero.id",
+        "hero_attribute.hero_id"
+    ],
+    "272": [
+        "attribute.id",
+        "superhero.id",
+        "publisher.publisher_name",
+        "superhero.superhero_name",
+        "superhero.publisher_id",
+        "attribute.attribute_name",
+        "hero_attribute.attribute_value",
+        "hero_attribute.attribute_id",
+        "hero_attribute.hero_id",
+        "publisher.id"
+    ],
+    "273": [
+        "superhero.skin_colour_id",
+        "superhero.hair_colour_id",
+        "publisher.publisher_name",
+        "superhero.gender_id",
+        "superhero.publisher_id",
+        "gender.gender",
+        "superhero.eye_colour_id",
+        "colour.colour",
+        "superhero.id",
+        "colour.id",
+        "gender.id",
+        "publisher.id"
+    ],
+    "274": [
+        "superhero.skin_colour_id",
+        "superhero.hair_colour_id",
+        "publisher.publisher_name",
+        "superhero.superhero_name",
+        "superhero.publisher_id",
+        "superhero.eye_colour_id",
+        "colour.colour",
+        "superhero.id",
+        "colour.id",
+        "publisher.id"
+    ],
+    "275": [
+        "superhero.skin_colour_id",
+        "superhero.gender_id",
+        "gender.gender",
+        "colour.colour",
+        "superhero.id",
+        "colour.id",
+        "gender.id"
+    ],
+    "276": [
+        "hero_power.hero_id",
+        "hero_power.power_id",
+        "superhero.id",
+        "superhero.superhero_name"
+    ],
+    "277": [
+        "superhero.height_cm",
+        "colour.colour",
+        "superhero.id",
+        "colour.id",
+        "superhero.eye_colour_id"
+    ],
+    "278": [
+        "superhero.hair_colour_id",
+        "superhero.superhero_name",
+        "colour.colour",
+        "superhero.id",
+        "colour.id",
+        "superhero.eye_colour_id"
+    ],
+    "279": [
+        "alignment.alignment",
+        "superhero.superhero_name",
+        "alignment.id",
+        "superhero.alignment_id",
+        "superhero.id"
+    ],
+    "280": [
+        "hero_attribute.attribute_id",
+        "attribute.id",
+        "attribute.attribute_name",
+        "hero_attribute.attribute_value",
+        "superhero.id",
+        "hero_attribute.hero_id"
+    ],
+    "281": [
+        "publisher.publisher_name",
+        "superhero.gender_id",
+        "superhero.publisher_id",
+        "gender.gender",
+        "superhero.id",
+        "gender.id",
+        "publisher.id"
+    ],
+    "282": [
+        "superhero.weight_kg",
+        "superhero.full_name"
+    ],
+    "283": [
+        "superhero.height_cm"
+    ],
+    "284": [
+        "hero_power.power_id",
+        "superpower.power_name",
+        "superhero.superhero_name",
+        "hero_power.hero_id",
+        "superpower.id",
+        "superhero.id"
+    ],
+    "285": [
+        "hero_attribute.attribute_id",
+        "attribute.id",
+        "superhero.superhero_name",
+        "attribute.attribute_name",
+        "hero_attribute.attribute_value",
+        "superhero.id",
+        "hero_attribute.hero_id"
+    ],
+    "286": [
+        "hero_attribute.attribute_id",
+        "attribute.id",
+        "superhero.superhero_name",
+        "attribute.attribute_name",
+        "hero_attribute.attribute_value",
+        "superhero.id",
+        "hero_attribute.hero_id"
+    ],
+    "287": [
+        "superhero.hair_colour_id",
+        "superhero.superhero_name",
+        "colour.colour",
+        "superhero.id",
+        "colour.id",
+        "superhero.eye_colour_id"
+    ],
+    "288": [
+        "publisher.publisher_name",
+        "superhero.superhero_name",
+        "superhero.publisher_id",
+        "superhero.id",
+        "publisher.id"
+    ],
+    "289": [
+        "colour.colour",
+        "superhero.id",
+        "colour.id",
+        "superhero.eye_colour_id"
+    ],
+    "290": [
+        "superhero.id",
+        "gender.gender",
+        "gender.id",
+        "superhero.gender_id"
+    ],
+    "291": [
+        "superhero.full_name",
+        "colour.colour",
+        "superhero.id",
+        "colour.id",
+        "superhero.eye_colour_id"
+    ],
+    "292": [
+        "superhero.weight_kg",
+        "colour.colour",
+        "superhero.id",
+        "colour.id",
+        "superhero.eye_colour_id"
+    ],
+    "293": [
+        "alignment.alignment",
+        "superhero.skin_colour_id",
+        "alignment.id",
+        "superhero.alignment_id",
+        "colour.colour",
+        "superhero.id",
+        "colour.id"
+    ],
+    "294": [
+        "hero_power.power_id",
+        "superpower.power_name",
+        "superhero.superhero_name",
+        "hero_power.hero_id",
+        "superpower.id",
+        "superhero.id"
+    ],
+    "295": [
+        "hero_power.power_id",
+        "superpower.power_name",
+        "superhero.gender_id",
+        "gender.gender",
+        "hero_power.hero_id",
+        "superpower.id",
+        "superhero.id",
+        "gender.id"
+    ],
+    "296": [
+        "superhero.id",
+        "publisher.publisher_name",
+        "superhero.publisher_id",
+        "publisher.id"
+    ],
+    "297": [
+        "users.DisplayName",
+        "users.Reputation"
+    ],
+    "298": [
+        "users.CreationDate",
+        "users.DisplayName"
+    ],
+    "299": [
+        "users.LastAccessDate"
+    ],
+    "300": [
+        "posts.Title",
+        "posts.Id",
+        "posts.OwnerUserId",
+        "users.DisplayName",
+        "users.Id"
+    ],
+    "301": [
+        "posts.Id",
+        "users.Id",
+        "users.DisplayName",
+        "posts.OwnerUserId"
+    ],
+    "302": [
+        "posts.Title",
+        "posts.Id",
+        "users.DisplayName",
+        "posts.LastEditorUserId",
+        "users.Id"
+    ],
+    "303": [
+        "posts.Id",
+        "posts.OwnerUserId",
+        "users.Age",
+        "posts.Score",
+        "users.Id"
+    ],
+    "304": [
+        "tags.ExcerptPostId",
+        "posts.Id",
+        "tags.TagName",
+        "tags.Id",
+        "posts.Body"
+    ],
+    "305": [
+        "posts.Id",
+        "posts.OwnerUserId",
+        "users.DisplayName",
+        "posts.Score",
+        "users.Id"
+    ],
+    "306": [
+        "posts.Id",
+        "posts.OwnerUserId",
+        "users.Age",
+        "posts.Score",
+        "users.Id"
+    ],
+    "307": [
+        "comments.CreationDate",
+        "comments.PostId",
+        "comments.UserId",
+        "posts.Id",
+        "posts.FavoriteCount",
+        "comments.Id"
+    ],
+    "308": [
+        "comments.CreationDate",
+        "comments.PostId",
+        "comments.UserId",
+        "posts.Id",
+        "comments.Id",
+        "posts.ClosedDate"
+    ],
+    "309": [
+        "posts.Id",
+        "users.Id",
+        "users.DisplayName",
+        "posts.OwnerUserId"
+    ],
+    "310": [
+        "votes.UserId",
+        "users.Id",
+        "users.DisplayName",
+        "votes.Id"
+    ],
+    "311": [
+        "votes.UserId",
+        "posts.OwnerUserId",
+        "posts.Id",
+        "users.Id",
+        "votes.Id"
+    ],
+    "312": [
+        "posts.ViewCount",
+        "posts.Title"
+    ],
+    "313": [
+        "comments.Score",
+        "comments.Text"
+    ],
+    "314": [
+        "comments.UserId",
+        "users.DisplayName",
+        "comments.Id",
+        "comments.Text",
+        "users.Id"
+    ],
+    "315": [
+        "posts.Title",
+        "posts.Id",
+        "posts.OwnerUserId",
+        "users.DisplayName",
+        "users.Reputation",
+        "users.Id"
+    ],
+    "316": [
+        "posts.Title",
+        "posts.Id",
+        "posts.OwnerUserId",
+        "users.DisplayName",
+        "posts.OwnerDisplayName",
+        "users.Id"
+    ],
+    "317": [
+        "postHistory.CreationDate",
+        "postHistory.Id",
+        "posts.Title",
+        "posts.Id",
+        "postHistory.UserDisplayName",
+        "postHistory.PostId",
+        "postHistory.UserId",
+        "postHistory.Comment",
+        "postHistory.PostHistoryTypeId"
+    ],
+    "318": [
+        "votes.UserId",
+        "votes.BountyAmount",
+        "posts.Title",
+        "posts.Id",
+        "users.DisplayName",
+        "votes.PostId",
+        "users.Id",
+        "votes.Id"
+    ],
+    "319": [
+        "comments.CreationDate",
+        "comments.PostId",
+        "posts.Title",
+        "posts.Id",
+        "posts.ViewCount",
+        "comments.Text",
+        "comments.Id",
+        "posts.Tags"
+    ],
+    "320": [
+        "users.Id",
+        "badges.Name",
+        "badges.Id",
+        "badges.UserId"
+    ],
+    "321": [
+        "users.Views",
+        "postHistory.Id",
+        "users.DisplayName",
+        "postHistory.UserId",
+        "users.Id",
+        "postHistory.PostHistoryTypeId"
+    ],
+    "322": [
+        "badges.Name",
+        "badges.Date"
+    ],
+    "323": [
+        "votes.UserId",
+        "users.UpVotes",
+        "posts.Id",
+        "posts.OwnerUserId",
+        "users.Age",
+        "users.Id",
+        "votes.Id"
+    ],
+    "324": [
+        "votes.CreationDate"
+    ],
+    "325": [
+        "posts.AnswerCount",
+        "posts.Id",
+        "posts.OwnerUserId",
+        "posts.ViewCount",
+        "users.DisplayName",
+        "users.Id"
+    ],
+    "326": [
+        "posts.Id",
+        "posts.OwnerUserId",
+        "posts.ViewCount",
+        "users.DisplayName",
+        "users.Id"
+    ],
+    "327": [
+        "posts.Id",
+        "users.Id",
+        "posts.OwnerUserId",
+        "users.DisplayName",
+        "tags.TagName",
+        "tags.Id",
+        "tags.Count",
+        "posts.Tags",
+        "posts.CommentCount"
+    ],
+    "328": [
+        "posts.Id",
+        "users.Id",
+        "posts.OwnerUserId",
+        "users.DisplayName",
+        "posts.Tags"
+    ],
+    "329": [
+        "posts.Id",
+        "posts.OwnerUserId",
+        "posts.ViewCount",
+        "users.DisplayName",
+        "users.Id"
+    ],
+    "330": [
+        "postLinks.PostId",
+        "posts.AnswerCount",
+        "posts.Id",
+        "postLinks.CreationDate",
+        "postLinks.Id"
+    ],
+    "331": [
+        "votes.UserId",
+        "votes.CreationDate",
+        "users.DisplayName",
+        "users.CreationDate",
+        "users.Id",
+        "votes.Id"
+    ],
+    "332": [
+        "badges.Id",
+        "badges.Date",
+        "users.DisplayName",
+        "users.Id",
+        "badges.Name",
+        "badges.UserId"
+    ],
+    "333": [
+        "posts.Id",
+        "posts.OwnerUserId",
+        "posts.FavoriteCount",
+        "users.Location",
+        "users.Id"
+    ],
+    "334": [
+        "posts.Title",
+        "posts.Id",
+        "posts.OwnerUserId",
+        "posts.ViewCount",
+        "users.DisplayName",
+        "users.Id"
+    ],
+    "335": [
+        "posts.Id",
+        "posts.OwnerUserId",
+        "posts.FavoriteCount",
+        "users.DisplayName",
+        "users.CreationDate",
+        "posts.OwnerDisplayName",
+        "users.Id",
+        "posts.CreaionDate"
+    ],
+    "336": [
+        "posts.Id",
+        "posts.OwnerUserId",
+        "users.Reputation",
+        "users.CreationDate",
+        "users.Id",
+        "posts.CreaionDate"
+    ],
+    "337": [
+        "posts.Title",
+        "posts.Id",
+        "posts.ViewCount",
+        "users.DisplayName",
+        "posts.LastEditorUserId",
+        "users.Id",
+        "postHistory.Text"
+    ],
+    "338": [
+        "comments.PostId",
+        "posts.Id",
+        "comments.Id",
+        "comments.Score",
+        "posts.Score"
+    ],
+    "339": [
+        "comments.CreationDate",
+        "comments.PostId",
+        "comments.UserId",
+        "posts.Title",
+        "posts.Id",
+        "users.DisplayName",
+        "comments.Text",
+        "comments.Id",
+        "comments.UserDisplayName",
+        "users.CreationDate",
+        "users.Id"
+    ],
+    "340": [
+        "posts.Id",
+        "posts.OwnerUserId",
+        "users.Reputation",
+        "posts.Score",
+        "users.Id"
+    ],
+    "341": [
+        "tags.ExcerptPostId",
+        "tags.Id",
+        "tags.TagName",
+        "tags.WikiPostId"
+    ],
+    "342": [
+        "users.UpVotes",
+        "comments.UserId",
+        "comments.Id",
+        "users.Reputation",
+        "comments.Text",
+        "users.Id"
+    ],
+    "343": [
+        "comments.CreationDate",
+        "comments.PostId",
+        "posts.Id",
+        "posts.ViewCount",
+        "comments.Text",
+        "comments.Id",
+        "comments.Score",
+        "posts.Score"
+    ],
+    "344": [
+        "comments.PostId",
+        "posts.Id",
+        "comments.Id",
+        "comments.Score",
+        "posts.Score",
+        "posts.CommentCount"
+    ],
+    "345": [
+        "votes.UserId",
+        "users.UpVotes",
+        "comments.UserId",
+        "comments.Id",
+        "comments.Score",
+        "users.Id",
+        "votes.Id"
+    ],
+    "346": [
+        "cards.cardKingdomFoilId",
+        "cards.cardKingdomId",
+        "cards.id"
+    ],
+    "347": [
+        "cards.borderColor",
+        "cards.cardKingdomId",
+        "cards.cardKingdomFoilId",
+        "cards.availability",
+        "cards.id"
+    ],
+    "348": [
+        "legalities.status",
+        "legalities.uuid",
+        "legalities.id",
+        "cards.rarity",
+        "legalities.format",
+        "cards.id",
+        "cards.uuid"
+    ],
+    "349": [
+        "cards.type",
+        "legalities.status",
+        "cards.name",
+        "legalities.uuid",
+        "legalities.id",
+        "cards.side",
+        "cards.types",
+        "legalities.format",
+        "cards.id",
+        "cards.uuid"
+    ],
+    "350": [
+        "legalities.status",
+        "legalities.uuid",
+        "legalities.id",
+        "cards.artist",
+        "legalities.format",
+        "cards.id",
+        "cards.power",
+        "cards.uuid"
+    ],
+    "351": [
+        "rulings.date",
+        "cards.uuid",
+        "rulings.uuid",
+        "cards.name",
+        "rulings.text",
+        "cards.artist",
+        "cards.hasContentWarning",
+        "cards.text",
+        "cards.id",
+        "rulings.id"
+    ],
+    "352": [
+        "cards.uuid",
+        "rulings.uuid",
+        "cards.name",
+        "cards.isPromo",
+        "cards.artist",
+        "cards.id",
+        "rulings.id"
+    ],
+    "353": [
+        "foreign_data.language"
+    ],
+    "354": [
+        "cards.power"
+    ],
+    "355": [
+        "cards.borderColor",
+        "cards.name"
+    ],
+    "356": [
+        "cards.text",
+        "cards.name"
+    ],
+    "357": [
+        "cards.borderColor"
+    ],
+    "358": [
+        "cards.uuid",
+        "foreign_data.language",
+        "foreign_data.uuid",
+        "foreign_data.id",
+        "cards.isStorySpotlight",
+        "cards.id"
+    ],
+    "359": [
+        "cards.types",
+        "cards.type",
+        "cards.subtypes",
+        "cards.originalType"
+    ],
+    "360": [
+        "cards.duelDeck",
+        "cards.id"
+    ],
+    "361": [
+        "cards.borderColor",
+        "legalities.uuid",
+        "legalities.id",
+        "legalities.status",
+        "cards.id",
+        "cards.uuid"
+    ],
+    "362": [
+        "cards.number",
+        "cards.name",
+        "foreign_data.language",
+        "foreign_data.uuid",
+        "cards.setCode",
+        "foreign_data.name",
+        "cards.colors",
+        "foreign_data.id",
+        "cards.id",
+        "cards.originalType",
+        "cards.uuid"
+    ],
+    "363": [
+        "cards.frameVersion",
+        "cards.borderColor",
+        "cards.name",
+        "cards.manaCost",
+        "cards.layout",
+        "cards.availability"
+    ],
+    "364": [
+        "cards.text",
+        "cards.isTextless",
+        "cards.isStorySpotlight"
+    ],
+    "365": [
+        "set_translations.setCode",
+        "set_translations.translation",
+        "sets.block",
+        "set_translations.language",
+        "sets.code"
+    ],
+    "366": [
+        "cards.supertypes",
+        "cards.type",
+        "cards.subtypes",
+        "foreign_data.language",
+        "foreign_data.uuid",
+        "foreign_data.id",
+        "cards.types",
+        "cards.id",
+        "foreign_data.type",
+        "cards.uuid"
+    ],
+    "367": [
+        "cards.uuid",
+        "rulings.uuid",
+        "rulings.text",
+        "cards.text",
+        "cards.id",
+        "cards.power",
+        "rulings.id"
+    ],
+    "368": [
+        "cards.uuid",
+        "rulings.uuid",
+        "cards.name",
+        "legalities.uuid",
+        "legalities.id",
+        "rulings.text",
+        "cards.side",
+        "cards.text",
+        "legalities.format",
+        "cards.id",
+        "rulings.id"
+    ],
+    "369": [
+        "cards.borderColor",
+        "cards.type",
+        "cards.uuid",
+        "foreign_data.language",
+        "foreign_data.uuid",
+        "cards.name",
+        "foreign_data.name",
+        "cards.artist",
+        "foreign_data.id",
+        "cards.types",
+        "cards.layout",
+        "foreign_data.type",
+        "cards.id"
+    ],
+    "370": [
+        "sets.baseSetSize",
+        "set_translations.setCode",
+        "set_translations.translation",
+        "sets.block",
+        "set_translations.language",
+        "sets.code"
+    ],
+    "371": [
+        "legalities.status",
+        "legalities.uuid",
+        "legalities.id",
+        "cards.hasContentWarning",
+        "legalities.format",
+        "cards.id",
+        "cards.uuid"
+    ],
+    "372": [
+        "cards.uuid",
+        "foreign_data.language",
+        "foreign_data.uuid",
+        "foreign_data.id",
+        "cards.power",
+        "cards.id"
+    ],
+    "373": [
+        "foreign_data.multiverseid",
+        "foreign_data.id",
+        "foreign_data.language"
+    ],
+    "374": [
+        "cards.text",
+        "cards.layout",
+        "cards.isTextless"
+    ],
+    "375": [
+        "set_translations.language",
+        "sets.id",
+        "sets.mcmName",
+        "sets.code",
+        "foreign_data.language",
+        "foreign_data.uuid",
+        "cards.setCode",
+        "set_translations.setCode",
+        "foreign_data.id",
+        "set_translations.translation",
+        "cards.id",
+        "cards.uuid"
+    ],
+    "376": [
+        "foreign_data.name",
+        "foreign_data.language"
+    ],
+    "377": [
+        "cards.convertedManaCost",
+        "cards.name"
+    ],
+    "378": [
+        "set_translations.setCode",
+        "cards.name",
+        "cards.setCode",
+        "set_translations.translation",
+        "set_translations.language"
+    ],
+    "379": [
+        "sets.releaseDate",
+        "sets.id",
+        "sets.code",
+        "cards.name",
+        "foreign_data.language",
+        "foreign_data.uuid",
+        "cards.setCode",
+        "foreign_data.name",
+        "foreign_data.id",
+        "sets.name",
+        "cards.id",
+        "cards.uuid"
+    ],
+    "380": [
+        "set_translations.setCode",
+        "cards.setCode",
+        "cards.artist",
+        "set_translations.id",
+        "set_translations.translation",
+        "cards.id",
+        "cards.uuid"
+    ],
+    "381": [
+        "set_translations.setCode",
+        "sets.name",
+        "set_translations.translation",
+        "set_translations.language",
+        "sets.code"
+    ],
+    "382": [
+        "sets.releaseDate",
+        "sets.id",
+        "cards.name",
+        "cards.setCode",
+        "sets.name",
+        "sets.mtgoCode",
+        "cards.id",
+        "sets.code"
+    ],
+    "383": [
+        "set_translations.setCode",
+        "set_translations.translation",
+        "sets.block",
+        "set_translations.language",
+        "sets.code"
+    ],
+    "384": [
+        "sets.isForeignOnly",
+        "cards.name",
+        "cards.setCode",
+        "sets.name",
+        "sets.code"
+    ],
+    "385": [
+        "sets.baseSetSize",
+        "set_translations.setCode",
+        "set_translations.translation",
+        "set_translations.language",
+        "sets.code"
+    ],
+    "386": [
+        "cards.name",
+        "cards.setCode",
+        "cards.artist",
+        "sets.name",
+        "sets.code"
+    ],
+    "387": [
+        "cards.convertedManaCost",
+        "cards.name",
+        "cards.setCode",
+        "sets.name",
+        "cards.power",
+        "sets.code"
+    ],
+    "388": [
+        "cards.name",
+        "foreign_data.language",
+        "foreign_data.uuid",
+        "foreign_data.name",
+        "foreign_data.flavorText",
+        "foreign_data.id",
+        "cards.id",
+        "cards.flavorText",
+        "cards.uuid"
+    ],
+    "389": [
+        "cards.number",
+        "sets.id",
+        "sets.code",
+        "cards.name",
+        "foreign_data.language",
+        "foreign_data.uuid",
+        "cards.setCode",
+        "foreign_data.name",
+        "foreign_data.text",
+        "foreign_data.id",
+        "sets.name",
+        "cards.text",
+        "cards.id",
+        "cards.uuid"
+    ],
+    "390": [
+        "cards.convertedManaCost",
+        "sets.id",
+        "sets.code",
+        "cards.name",
+        "foreign_data.language",
+        "foreign_data.uuid",
+        "cards.setCode",
+        "foreign_data.name",
+        "foreign_data.id",
+        "sets.name",
+        "cards.id",
+        "cards.uuid"
+    ],
+    "391": [
+        "cards.convertedManaCost",
+        "sets.id",
+        "sets.code",
+        "cards.name",
+        "cards.setCode",
+        "sets.name",
+        "cards.id"
+    ],
+    "392": [
+        "cards.name",
+        "cards.setCode",
+        "sets.name",
+        "cards.cardKingdomId",
+        "cards.cardKingdomFoilId",
+        "cards.power",
+        "sets.code"
+    ],
+    "393": [
+        "legalities.status",
+        "cards.name",
+        "legalities.uuid",
+        "legalities.id",
+        "legalities.format",
+        "cards.id",
+        "cards.uuid"
+    ],
+    "394": [
+        "legalities.status",
+        "cards.uuid",
+        "cards.edhrecRank",
+        "cards.name",
+        "legalities.uuid",
+        "legalities.id",
+        "legalities.format",
+        "cards.id"
+    ],
+    "395": [
+        "legalities.status",
+        "sets.id",
+        "sets.code",
+        "cards.name",
+        "cards.setCode",
+        "legalities.uuid",
+        "legalities.id",
+        "sets.name",
+        "legalities.format",
+        "cards.id",
+        "cards.uuid"
+    ],
+    "396": [
+        "cards.name",
+        "foreign_data.language",
+        "cards.uuid",
+        "foreign_data.uuid",
+        "foreign_data.name",
+        "foreign_data.id",
+        "cards.id"
+    ],
+    "397": [
+        "cards.frameVersion",
+        "cards.name",
+        "legalities.uuid",
+        "legalities.id",
+        "cards.artist",
+        "legalities.status",
+        "cards.id",
+        "cards.uuid"
+    ],
+    "398": [
+        "bond.bond_type"
+    ],
+    "399": [
+        "atom.element",
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "bond.molecule_id",
+        "bond.bond_type"
+    ],
+    "400": [
+        "molecule.label",
+        "bond.bond_type",
+        "molecule.molecule_id",
+        "bond.molecule_id"
+    ],
+    "401": [
+        "molecule.label",
+        "bond.bond_type",
+        "molecule.molecule_id",
+        "bond.molecule_id"
+    ],
+    "402": [
+        "atom.element",
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "bond.molecule_id",
+        "atom.atom_id",
+        "bond.bond_type"
+    ],
+    "403": [
+        "connected.atom_id2",
+        "atom.element",
+        "connected.bond_id",
+        "connected.atom_id",
+        "bond.bond_id",
+        "atom.atom_id"
+    ],
+    "404": [
+        "connected.atom_id2",
+        "atom.element",
+        "connected.bond_id",
+        "connected.atom_id",
+        "bond.bond_id",
+        "atom.atom_id",
+        "bond.bond_type"
+    ],
+    "405": [
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "molecule.label",
+        "atom.element"
+    ],
+    "406": [
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "molecule.label",
+        "atom.element"
+    ],
+    "407": [
+        "connected.atom_id2",
+        "connected.bond_id",
+        "connected.atom_id",
+        "bond.bond_id",
+        "atom.atom_id",
+        "bond.bond_type"
+    ],
+    "408": [
+        "atom.element",
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "bond.molecule_id",
+        "atom.atom_id",
+        "bond.bond_type"
+    ],
+    "409": [
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "molecule.label",
+        "atom.element"
+    ],
+    "410": [
+        "molecule.label",
+        "bond.bond_type",
+        "molecule.molecule_id",
+        "bond.molecule_id"
+    ],
+    "411": [
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "atom.element"
+    ],
+    "412": [
+        "molecule.molecule_id",
+        "bond.bond_type",
+        "bond.molecule_id",
+        "bond.bond_id"
+    ],
+    "413": [
+        "molecule.label"
+    ],
+    "414": [
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "atom.atom_id",
+        "atom.element"
+    ],
+    "415": [
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "molecule.label",
+        "atom.element"
+    ],
+    "416": [
+        "molecule.molecule_id",
+        "bond.bond_type",
+        "bond.molecule_id"
+    ],
+    "417": [
+        "molecule.label",
+        "connected.atom_id2",
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "connected.bond_id",
+        "bond.molecule_id",
+        "connected.atom_id",
+        "bond.bond_id",
+        "atom.atom_id",
+        "bond.bond_type"
+    ],
+    "418": [
+        "connected.atom_id2",
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "connected.bond_id",
+        "bond.molecule_id",
+        "connected.atom_id",
+        "bond.bond_id",
+        "atom.atom_id"
+    ],
+    "419": [
+        "connected.atom_id2",
+        "atom.element",
+        "connected.bond_id",
+        "connected.atom_id",
+        "bond.bond_id",
+        "atom.atom_id",
+        "bond.bond_type"
+    ],
+    "420": [
+        "connected.atom_id2",
+        "connected.bond_id",
+        "connected.atom_id",
+        "bond.bond_id",
+        "atom.atom_id"
+    ],
+    "421": [
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "atom.element"
+    ],
+    "422": [
+        "molecule.label",
+        "atom.element",
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "atom.atom_id"
+    ],
+    "423": [
+        "connected.atom_id2",
+        "atom.element",
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "connected.bond_id",
+        "bond.molecule_id",
+        "connected.atom_id",
+        "bond.bond_id",
+        "atom.atom_id",
+        "bond.bond_type"
+    ],
+    "424": [
+        "molecule.label",
+        "bond.bond_type",
+        "molecule.molecule_id",
+        "bond.molecule_id"
+    ],
+    "425": [
+        "connected.atom_id2",
+        "atom.element",
+        "connected.bond_id",
+        "connected.atom_id",
+        "bond.bond_id",
+        "atom.atom_id"
+    ],
+    "426": [
+        "atom.atom_id",
+        "connected.atom_id",
+        "connected.atom_id2",
+        "atom.element"
+    ],
+    "427": [
+        "connected.atom_id2",
+        "atom.element",
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "connected.bond_id",
+        "bond.molecule_id",
+        "connected.atom_id",
+        "bond.bond_id",
+        "atom.atom_id",
+        "bond.bond_type"
+    ],
+    "428": [
+        "connected.atom_id2",
+        "atom.element",
+        "connected.bond_id",
+        "connected.atom_id",
+        "bond.bond_id",
+        "atom.atom_id"
+    ],
+    "429": [
+        "connected.atom_id2",
+        "atom.element",
+        "connected.bond_id",
+        "connected.atom_id",
+        "bond.bond_id",
+        "atom.atom_id",
+        "bond.bond_type"
+    ],
+    "430": [
+        "molecule.label",
+        "bond.bond_type",
+        "molecule.molecule_id",
+        "bond.molecule_id"
+    ],
+    "431": [
+        "atom.element",
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "bond.molecule_id",
+        "atom.atom_id",
+        "bond.bond_type"
+    ],
+    "432": [
+        "atom.element",
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "bond.molecule_id",
+        "atom.atom_id",
+        "bond.bond_type"
+    ],
+    "433": [
+        "connected.atom_id2",
+        "atom.element",
+        "connected.bond_id",
+        "connected.atom_id",
+        "bond.bond_id",
+        "atom.atom_id"
+    ],
+    "434": [
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "molecule.label",
+        "atom.element"
+    ],
+    "435": [
+        "molecule.label",
+        "atom.element",
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "atom.atom_id"
+    ],
+    "436": [
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "molecule.label",
+        "atom.element"
+    ],
+    "437": [
+        "molecule.label",
+        "atom.element",
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "atom.atom_id"
+    ],
+    "438": [
+        "schools.CDSCode",
+        "schools.Virtual",
+        "schools.School",
+        "satscores.cds",
+        "satscores.AvgScrMath"
+    ],
+    "439": [
+        "frpm.CDSCode",
+        "frpm.Enrollment (Ages 5-17)",
+        "schools.CDSCode",
+        "frpm.Enrollment (K-12)"
+    ],
+    "440": [
+        "satscores.NumGE1500",
+        "schools.CDSCode",
+        "satscores.NumTstTakr",
+        "frpm.Enrollment (Ages 5-17)",
+        "satscores.cds",
+        "frpm.Free Meal Count (Ages 5-17)",
+        "frpm.CDSCode"
+    ],
+    "441": [
+        "schools.CDSCode",
+        "satscores.AvgScrWrite",
+        "schools.Charter",
+        "satscores.cds",
+        "schools.CharterNum"
+    ],
+    "442": [
+        "schools.CDSCode",
+        "schools.Street",
+        "schools.City",
+        "schools.StreetAbr",
+        "schools.School",
+        "schools.State",
+        "schools.Zip",
+        "frpm.Enrollment (Ages 5-17)",
+        "frpm.CDSCode",
+        "frpm.Enrollment (K-12)"
+    ],
+    "443": [
+        "satscores.NumGE1500",
+        "schools.CDSCode",
+        "frpm.Percent (%) Eligible Free (K-12)",
+        "frpm.Free Meal Count (K-12)",
+        "schools.School",
+        "satscores.cds",
+        "frpm.CDSCode",
+        "frpm.Enrollment (K-12)"
+    ],
+    "444": [
+        "schools.CDSCode",
+        "schools.School",
+        "satscores.cds",
+        "satscores.AvgScrMath",
+        "frpm.District Name",
+        "frpm.CDSCode",
+        "schools.FundingType",
+        "schools.District"
+    ],
+    "445": [
+        "schools.CDSCode",
+        "schools.Street",
+        "schools.City",
+        "schools.School",
+        "schools.County",
+        "schools.Zip",
+        "schools.State",
+        "frpm.FRPM Count (Ages 5-17)",
+        "frpm.School Type",
+        "frpm.CDSCode",
+        "frpm.County Name"
+    ],
+    "446": [
+        "schools.CDSCode",
+        "schools.Phone",
+        "satscores.AvgScrWrite",
+        "schools.School",
+        "satscores.cds",
+        "schools.OpenDate",
+        "schools.ClosedDate"
+    ],
+    "447": [
+        "schools.CDSCode",
+        "frpm.School Name",
+        "schools.Charter",
+        "schools.School",
+        "frpm.Charter Funding Type",
+        "frpm.Enrollment (Ages 5-17)",
+        "schools.DOCType",
+        "frpm.CDSCode",
+        "schools.DOC",
+        "frpm.Enrollment (K-12)"
+    ],
+    "448": [
+        "schools.CDSCode",
+        "frpm.Percent (%) Eligible Free (K-12)",
+        "frpm.School Name",
+        "frpm.Free Meal Count (K-12)",
+        "schools.School",
+        "frpm.CDSCode",
+        "frpm.District Name",
+        "frpm.Enrollment (K-12)",
+        "frpm.County Name"
+    ],
+    "449": [
+        "schools.SOC",
+        "schools.CDSCode",
+        "frpm.FRPM Count (K-12)",
+        "schools.School",
+        "frpm.CDSCode",
+        "frpm.Enrollment (K-12)"
+    ],
+    "450": [
+        "satscores.NumGE1500",
+        "schools.CDSCode",
+        "schools.Street",
+        "schools.City",
+        "satscores.NumTstTakr",
+        "schools.State",
+        "schools.Zip",
+        "satscores.cds"
+    ],
+    "451": [
+        "satscores.NumGE1500",
+        "schools.AdmLName1",
+        "schools.CDSCode",
+        "schools.AdmLName3",
+        "schools.AdmFName3",
+        "satscores.cds",
+        "schools.AdmFName2",
+        "schools.AdmFName1",
+        "schools.AdmLName2"
+    ],
+    "452": [
+        "schools.CDSCode",
+        "satscores.NumTstTakr",
+        "schools.County",
+        "satscores.cds",
+        "schools.OpenDate"
+    ],
+    "453": [
+        "schools.CDSCode",
+        "schools.Phone",
+        "satscores.dname",
+        "satscores.AvgScrRead",
+        "satscores.cds",
+        "schools.District"
+    ],
+    "454": [
+        "schools.CDSCode",
+        "satscores.AvgScrRead",
+        "schools.Virtual",
+        "schools.County",
+        "schools.School",
+        "satscores.cds"
+    ],
+    "455": [
+        "schools.CDSCode",
+        "schools.AdmLName1",
+        "satscores.AvgScrWrite",
+        "schools.School",
+        "satscores.cds",
+        "schools.AdmFName1"
+    ],
+    "456": [
+        "frpm.Academic Year",
+        "schools.CDSCode",
+        "schools.County",
+        "schools.School",
+        "schools.State",
+        "frpm.CDSCode",
+        "schools.DOC",
+        "frpm.Enrollment (K-12)",
+        "schools.District"
+    ],
+    "457": [
+        "schools.DOC",
+        "schools.OpenDate",
+        "schools.County"
+    ],
+    "458": [
+        "schools.CDSCode",
+        "schools.DOC",
+        "schools.StatusType",
+        "schools.County"
+    ],
+    "459": [
+        "schools.CDSCode",
+        "schools.MailStreet",
+        "schools.Street",
+        "schools.School",
+        "satscores.cds",
+        "satscores.AvgScrMath"
+    ],
+    "460": [
+        "schools.CDSCode",
+        "frpm.Percent (%) Eligible Free (K-12)",
+        "frpm.Free Meal Count (K-12)",
+        "schools.Charter",
+        "schools.County",
+        "schools.School",
+        "frpm.CDSCode",
+        "frpm.Enrollment (K-12)"
+    ],
+    "461": [
+        "frpm.Academic Year",
+        "schools.CDSCode",
+        "schools.City",
+        "schools.EdOpsCode",
+        "frpm.Enrollment (Ages 5-17)",
+        "frpm.CDSCode"
+    ],
+    "462": [
+        "frpm.High Grade",
+        "frpm.School Name",
+        "schools.School",
+        "frpm.Low Grade",
+        "schools.County",
+        "frpm.Enrollment (Ages 5-17)",
+        "frpm.FRPM Count (Ages 5-17)",
+        "frpm.County Name"
+    ],
+    "463": [
+        "schools.Virtual",
+        "schools.County"
+    ],
+    "464": [
+        "schools.Longitude",
+        "schools.GSoffered"
+    ],
+    "465": [
+        "schools.CDSCode",
+        "schools.City",
+        "schools.Magnet",
+        "schools.School",
+        "frpm.Low Grade",
+        "frpm.NSLP Provision Status",
+        "frpm.CDSCode",
+        "schools.GSserved"
+    ],
+    "466": [
+        "frpm.Percent (%) Eligible Free (K-12)",
+        "schools.CDSCode",
+        "frpm.District Code",
+        "schools.AdmFName3",
+        "frpm.Free Meal Count (K-12)",
+        "frpm.CDSCode",
+        "schools.AdmFName2",
+        "schools.AdmFName1",
+        "frpm.Enrollment (K-12)",
+        "schools.District"
+    ],
+    "467": [
+        "schools.SOC",
+        "schools.City",
+        "schools.School",
+        "schools.County",
+        "schools.AdmEmail2",
+        "schools.OpenDate",
+        "schools.AdmEmail1",
+        "schools.DOC"
+    ],
+    "468": [
+        "card.type",
+        "account.account_id",
+        "account.district_id",
+        "district.A3",
+        "district.district_id",
+        "account.frequency"
+    ],
+    "469": [
+        "client.gender",
+        "district.district_id",
+        "client.district_id",
+        "district.A11"
+    ],
+    "470": [
+        "district.A11",
+        "client.district_id",
+        "district.A3",
+        "district.district_id",
+        "client.gender",
+        "client.client_id"
+    ],
+    "471": [
+        "district.A11",
+        "client.birth_date",
+        "account.account_id",
+        "order.account_id",
+        "client.gender",
+        "account.date",
+        "client.client_id",
+        "disp.client_id",
+        "disp.account_id"
+    ],
+    "472": [
+        "district.A11",
+        "client.birth_date",
+        "account.account_id",
+        "account.district_id",
+        "client.district_id",
+        "district.district_id",
+        "order.account_id",
+        "account.date",
+        "client.client_id",
+        "disp.client_id",
+        "disp.account_id"
+    ],
+    "473": [
+        "card.type",
+        "loan.account_id",
+        "account.account_id",
+        "loan.amount",
+        "account.date",
+        "loan.date",
+        "account.frequency",
+        "loan.status",
+        "order.amount"
+    ],
+    "474": [
+        "loan.account_id",
+        "account.account_id",
+        "loan.duration",
+        "loan.amount",
+        "account.date",
+        "loan.date"
+    ],
+    "475": [
+        "client.birth_date",
+        "account.account_id",
+        "account.district_id",
+        "client.district_id",
+        "district.district_id",
+        "client.gender",
+        "account.date",
+        "client.client_id",
+        "district.A2",
+        "disp.client_id",
+        "disp.account_id"
+    ],
+    "476": [
+        "client.birth_date",
+        "account.account_id",
+        "account.district_id",
+        "client.district_id",
+        "district.district_id",
+        "client.gender",
+        "account.date",
+        "client.client_id",
+        "district.A2",
+        "disp.client_id",
+        "disp.account_id"
+    ],
+    "477": [
+        "client.district_id",
+        "district.A3",
+        "district.district_id",
+        "client.gender",
+        "district.A4"
+    ],
+    "478": [
+        "loan.loan_id",
+        "loan.account_id",
+        "trans.trans_id",
+        "account.account_id",
+        "trans.balance",
+        "trans.account",
+        "order.account_id",
+        "account.date",
+        "loan.date",
+        "trans.account_id",
+        "loan.status",
+        "trans.date"
+    ],
+    "479": [
+        "loan.status",
+        "loan.amount"
+    ],
+    "480": [
+        "loan.status",
+        "loan.account_id",
+        "loan.amount",
+        "account.account_id"
+    ],
+    "481": [
+        "loan.account_id",
+        "district.A13",
+        "account.account_id",
+        "account.district_id",
+        "district.A12",
+        "district.district_id",
+        "district.A2",
+        "loan.status"
+    ],
+    "482": [
+        "client.gender",
+        "district.district_id",
+        "client.district_id",
+        "district.A2"
+    ],
+    "483": [
+        "loan.account_id",
+        "account.account_id",
+        "loan.amount",
+        "account.date",
+        "loan.date",
+        "account.frequency",
+        "loan.status"
+    ],
+    "484": [
+        "loan.account_id",
+        "account.account_id",
+        "account.district_id",
+        "district.district_id",
+        "district.A2",
+        "loan.status"
+    ],
+    "485": [
+        "client.district_id",
+        "district.district_id",
+        "client.gender",
+        "district.A15",
+        "district.A2"
+    ],
+    "486": [
+        "account.account_id",
+        "trans.amount",
+        "account.district_id",
+        "trans.account",
+        "trans.operation",
+        "district.district_id",
+        "account.date",
+        "district.A2",
+        "trans.account_id",
+        "trans.type",
+        "trans.date",
+        "order.amount"
+    ],
+    "487": [
+        "trans.amount",
+        "account.account_id",
+        "trans.account",
+        "trans.operation",
+        "trans.account_id",
+        "account.date",
+        "disp.account_id",
+        "disp.client_id",
+        "trans.date",
+        "client.client_id"
+    ],
+    "488": [
+        "district.A11",
+        "account.account_id",
+        "account.district_id",
+        "district.district_id",
+        "disp.type",
+        "disp.account_id"
+    ],
+    "489": [
+        "account.district_id",
+        "account.date",
+        "district.A15",
+        "district.district_id"
+    ],
+    "490": [
+        "trans.trans_id",
+        "account.account_id",
+        "trans.account",
+        "trans.operation",
+        "client.client_id",
+        "trans.account_id",
+        "disp.client_id",
+        "disp.account_id"
+    ],
+    "491": [
+        "district.A11",
+        "client.district_id",
+        "district.district_id",
+        "client.gender",
+        "client.client_id"
+    ],
+    "492": [
+        "loan.account_id",
+        "account.account_id",
+        "loan.amount",
+        "account.date",
+        "client.client_id",
+        "loan.date",
+        "client.gender",
+        "disp.client_id",
+        "disp.account_id"
+    ],
+    "493": [
+        "account.account_id",
+        "order.account_id",
+        "account.date",
+        "order.k_symbol",
+        "account.frequency",
+        "order.amount"
+    ],
+    "494": [
+        "card.type",
+        "account.account_id",
+        "client.gender",
+        "client.client_id",
+        "account.frequency",
+        "disp.client_id",
+        "disp.account_id"
+    ],
+    "495": [
+        "district.A11",
+        "client.birth_date",
+        "account.account_id",
+        "account.district_id",
+        "client.district_id",
+        "district.district_id",
+        "order.account_id",
+        "client.gender",
+        "account.date",
+        "client.client_id",
+        "disp.client_id",
+        "disp.account_id"
+    ],
+    "496": [
+        "loan.account_id",
+        "account.account_id",
+        "trans.amount",
+        "trans.account",
+        "trans.operation",
+        "trans.k_symbol",
+        "loan.amount",
+        "trans.account_id",
+        "loan.status"
+    ],
+    "497": [
+        "card.type",
+        "card.disp_id",
+        "client.birth_date",
+        "disp.type",
+        "disp.client_id",
+        "disp.disp_id",
+        "client.client_id"
+    ],
+    "498": [
+        "yearmonth.CustomerID",
+        "yearmonth.Consumption",
+        "customers.Currency",
+        "yearmonth.Date",
+        "customers.CustomerID",
+        "customers.Segment"
+    ],
+    "499": [
+        "customers.Currency",
+        "customers.Segment"
+    ],
+    "500": [
+        "customers.CustomerID",
+        "yearmonth.Consumption",
+        "yearmonth.CustomerID",
+        "customers.Segment"
+    ],
+    "501": [
+        "customers.CustomerID",
+        "yearmonth.Consumption",
+        "customers.Currency",
+        "yearmonth.CustomerID"
+    ],
+    "502": [
+        "transactions_1k.Date",
+        "gasstations.GasStationID",
+        "gasstations.Country",
+        "transactions_1k.Price",
+        "transactions_1k.GasStationID"
+    ],
+    "503": [
+        "customers.CustomerID",
+        "transactions_1k.Date",
+        "customers.Currency",
+        "transactions_1k.CustomerID"
+    ],
+    "504": [
+        "transactions_1k.Date",
+        "gasstations.GasStationID",
+        "transactions_1k.Amount",
+        "transactions_1k.Price",
+        "transactions_1k.CustomerID",
+        "transactions_1k.GasStationID"
+    ],
+    "505": [
+        "income.link_to_member",
+        "member.position",
+        "income.amount",
+        "member.member_id"
+    ],
+    "506": [
+        "event.event_id",
+        "expense.approved",
+        "expense.link_to_budget",
+        "expense.expense_date",
+        "expense.expense_id",
+        "event.event_date",
+        "budget.budget_id",
+        "budget.link_to_event",
+        "event.event_name"
+    ],
+    "507": [
+        "expense.expense_date",
+        "expense.cost",
+        "member.last_name",
+        "expense.link_to_member",
+        "member.member_id",
+        "member.first_name"
+    ],
+    "508": [
+        "expense.link_to_budget",
+        "expense.expense_date",
+        "event.status",
+        "budget.budget_id",
+        "expense.expense_description",
+        "budget.event_status"
+    ],
+    "509": [
+        "event.event_id",
+        "event.status",
+        "budget.amount",
+        "budget.spent",
+        "budget.link_to_event",
+        "event.event_name"
+    ],
+    "510": [
+        "budget.spent"
+    ],
+    "511": [
+        "expense.link_to_budget",
+        "member.last_name",
+        "budget.budget_id",
+        "member.first_name",
+        "expense.link_to_member",
+        "event.event_name",
+        "budget.link_to_event",
+        "member.member_id",
+        "event.event_id"
+    ],
+    "512": [
+        "event.event_id",
+        "expense.link_to_budget",
+        "expense.cost",
+        "budget.budget_id",
+        "budget.link_to_event",
+        "event.event_name"
+    ],
+    "513": [
+        "income.amount",
+        "income.date_received",
+        "income.source"
+    ],
+    "514": [
+        "budget.remaining",
+        "event.event_id",
+        "event.status",
+        "budget.link_to_event",
+        "event.event_name"
+    ],
+    "515": [
+        "event.event_id",
+        "budget.category",
+        "budget.amount",
+        "budget.link_to_event",
+        "event.event_name"
+    ],
+    "516": [
+        "major.department",
+        "member.last_name",
+        "major.major_name",
+        "member.link_to_major",
+        "major.college",
+        "major.major_id"
+    ],
+    "517": [
+        "Patient.SEX",
+        "Patient.Admission"
+    ],
+    "518": [
+        "Laboratory.LDH",
+        "Laboratory.ID",
+        "Patient.SEX",
+        "Patient.ID",
+        "Patient.Birthday"
+    ],
+    "519": [
+        "Patient.ID",
+        "Examination.RVVT",
+        "Patient.Birthday",
+        "Examination.ID"
+    ],
+    "520": [
+        "Patient.Description",
+        "Patient.SEX",
+        "Patient.Admission"
+    ],
+    "521": [
+        "Examination.Diagnosis",
+        "Patient.Diagnosis",
+        "Examination.ID",
+        "Patient.ID",
+        "Patient.Birthday",
+        "Examination.Symptoms"
+    ],
+    "522": [
+        "Patient.Diagnosis",
+        "Laboratory.ID",
+        "Patient.ID",
+        "Laboratory.Date",
+        "Patient.First Date",
+        "Patient.Birthday"
+    ],
+    "523": [
+        "Patient.ID",
+        "Examination.Examination Date",
+        "Patient.Birthday",
+        "Examination.ID"
+    ],
+    "524": [
+        "Examination.Diagnosis",
+        "Patient.Diagnosis",
+        "Examination.ID",
+        "Examination.Examination Date",
+        "Laboratory.HGB",
+        "Laboratory.ID",
+        "Patient.ID",
+        "Laboratory.Date",
+        "Patient.Birthday"
+    ],
+    "525": [
+        "Examination.Diagnosis",
+        "Patient.Diagnosis",
+        "Examination.ID",
+        "Examination.Examination Date",
+        "Patient.ID",
+        "Examination.aCL IgM",
+        "Patient.Description"
+    ],
+    "526": [
+        "Laboratory.Date",
+        "Examination.ID",
+        "Laboratory.PT",
+        "Examination.Examination Date",
+        "Laboratory.ID",
+        "Laboratory.GPT",
+        "Laboratory.ALB",
+        "Laboratory.UN"
+    ],
+    "527": [
+        "Examination.ANA",
+        "Examination.Thrombosis",
+        "Examination.aCL IgM",
+        "Examination.ID"
+    ],
+    "528": [
+        "Patient.Diagnosis",
+        "Laboratory.ID",
+        "Laboratory.ALB",
+        "Patient.SEX",
+        "Patient.ID",
+        "Laboratory.PLT"
+    ],
+    "529": [
+        "Patient.Diagnosis",
+        "Laboratory.PT",
+        "Laboratory.ID",
+        "Laboratory.GPT",
+        "Patient.ID",
+        "Patient.Birthday"
+    ],
+    "530": [
+        "Laboratory.T-BIL",
+        "Patient.SEX",
+        "Patient.ID",
+        "Laboratory.ID"
+    ],
+    "531": [
+        "Patient.Admission",
+        "Laboratory.ID",
+        "Patient.SEX",
+        "Patient.ID",
+        "Laboratory.T-CHO",
+        "Patient.Birthday"
+    ],
+    "532": [
+        "Laboratory.TG",
+        "Laboratory.ID",
+        "Patient.ID",
+        "Laboratory.UN",
+        "Patient.Birthday"
+    ],
+    "533": [
+        "Laboratory.T-CHO",
+        "Laboratory.ID",
+        "Patient.SEX",
+        "Patient.ID",
+        "Laboratory.GLU",
+        "Patient.Birthday"
+    ],
+    "534": [
+        "Patient.Diagnosis",
+        "Laboratory.ID",
+        "Patient.ID",
+        "Laboratory.RBC",
+        "Patient.Birthday"
+    ],
+    "535": [
+        "Laboratory.HCT",
+        "Laboratory.ID",
+        "Patient.ID",
+        "Laboratory.UN",
+        "Patient.Birthday"
+    ],
+    "536": [
+        "Laboratory.PLT",
+        "Laboratory.ID"
+    ],
+    "537": [
+        "Patient.Diagnosis",
+        "Patient.Birthday",
+        "Laboratory.ID",
+        "Patient.SEX",
+        "Patient.ID",
+        "Laboratory.Date",
+        "Patient.Description",
+        "Laboratory.PLT"
+    ],
+    "538": [
+        "Laboratory.PT",
+        "Laboratory.ID",
+        "Patient.SEX",
+        "Patient.ID",
+        "Laboratory.UN",
+        "Patient.Birthday"
+    ],
+    "539": [
+        "Laboratory.Date",
+        "Laboratory.IGA",
+        "Laboratory.ID",
+        "Patient.ID",
+        "Laboratory.UN",
+        "Patient.First Date"
+    ],
+    "540": [
+        "Patient.Diagnosis",
+        "Laboratory.ID",
+        "Patient.ID",
+        "Laboratory.IGM",
+        "Laboratory.UN"
+    ],
+    "541": [
+        "Laboratory.CRE",
+        "Laboratory.ID",
+        "Patient.ID",
+        "Laboratory.UN",
+        "Patient.Birthday"
+    ],
+    "542": [
+        "Examination.ID",
+        "Laboratory.SC170",
+        "Laboratory.ID",
+        "Patient.SEX",
+        "Patient.ID",
+        "Laboratory.UN",
+        "Examination.Symptoms"
+    ],
+    "543": [
+        "Team.team_short_name",
+        "Team_Attributes.buildUpPlaySpeed",
+        "Team.id",
+        "Team.team_long_name",
+        "Team_Attributes.team_api_id",
+        "Team.team_api_id",
+        "Team_Attributes.date",
+        "Team_Attributes.id"
+    ],
+    "544": [
+        "Player_Attributes.id",
+        "Player_Attributes.sprint_speed",
+        "Player.player_name",
+        "Player.id",
+        "Player_Attributes.date",
+        "Player.player_api_id",
+        "Player_Attributes.player_api_id",
+        "Player.birthday"
+    ],
+    "545": [
+        "Team_Attributes.buildUpPlaySpeed",
+        "Team.id",
+        "Team_Attributes.team_fifa_api_id",
+        "Team.team_fifa_api_id",
+        "Team_Attributes.id"
+    ],
+    "546": [
+        "Player_Attributes.id",
+        "Player_Attributes.preferred_foot",
+        "Player_Attributes.player_fifa_api_id",
+        "Player.id",
+        "Player_Attributes.date",
+        "Player_Attributes.overall_rating",
+        "Player.player_api_id",
+        "Player.player_fifa_api_id",
+        "Player_Attributes.player_api_id",
+        "Player.birthday"
+    ],
+    "547": [
+        "Player_Attributes.id",
+        "Player_Attributes.preferred_foot",
+        "Player.id",
+        "Player.player_api_id",
+        "Player_Attributes.attacking_work_rate",
+        "Player_Attributes.player_api_id"
+    ],
+    "548": [
+        "Player_Attributes.id",
+        "Player_Attributes.defensive_work_rate",
+        "Player.id",
+        "Player.player_api_id",
+        "Player_Attributes.player_api_id",
+        "Player.birthday"
+    ],
+    "549": [
+        "Player_Attributes.id",
+        "Player.player_name",
+        "Player.id",
+        "Player.player_api_id",
+        "Player_Attributes.dribbling",
+        "Player_Attributes.volleys",
+        "Player_Attributes.player_api_id"
+    ],
+    "550": [
+        "Player_Attributes.id",
+        "Player.player_name",
+        "Player.id",
+        "Player_Attributes.overall_rating",
+        "Player.player_api_id",
+        "Player_Attributes.player_api_id"
+    ],
+    "551": [
+        "Team.id",
+        "Team.team_long_name",
+        "Team_Attributes.team_api_id",
+        "Team.team_api_id",
+        "Team_Attributes.buildUpPlayPassingClass",
+        "Team_Attributes.buildUpPlayPassing",
+        "Team_Attributes.date",
+        "Team_Attributes.id"
+    ],
+    "552": [
+        "Team_Attributes.defenceAggression",
+        "Team_Attributes.defenceAggressionClass",
+        "Team.id",
+        "Team.team_long_name",
+        "Team_Attributes.team_api_id",
+        "Team.team_api_id",
+        "Team_Attributes.date",
+        "Team_Attributes.id"
+    ],
+    "553": [
+        "Player_Attributes.id",
+        "Player.player_name",
+        "Player.id",
+        "Player_Attributes.date",
+        "Player_Attributes.overall_rating",
+        "Player.player_api_id",
+        "Player_Attributes.player_api_id"
+    ],
+    "554": [
+        "Player_Attributes.id",
+        "Player.player_name",
+        "Player.id",
+        "Player.player_api_id",
+        "Player_Attributes.attacking_work_rate",
+        "Player_Attributes.player_api_id"
+    ],
+    "555": [
+        "Player.player_name",
+        "Player.birthday"
+    ],
+    "556": [
+        "Player_Attributes.id",
+        "Player.id",
+        "Player_Attributes.jumping"
+    ],
+    "557": [
+        "Team_Attributes.buildUpPlaySpeed",
+        "Team.id",
+        "Team.team_long_name",
+        "Team_Attributes.buildUpPlaySpeedClass",
+        "Team_Attributes.team_api_id",
+        "Team.team_api_id",
+        "Team_Attributes.id"
+    ],
+    "558": [
+        "Player_Attributes.id",
+        "Player.player_name",
+        "Player.id",
+        "Player_Attributes.date",
+        "Player.weight",
+        "Player.player_api_id",
+        "Player_Attributes.curve",
+        "Player_Attributes.finishing",
+        "Player_Attributes.player_api_id"
+    ],
+    "559": [
+        "Match.away_team_api_id",
+        "Team.id",
+        "Team.team_long_name",
+        "Match.away_team_goal",
+        "Match.goal",
+        "Team.team_api_id",
+        "Match.id"
+    ],
+    "560": [
+        "Player_Attributes.id",
+        "Player.player_name",
+        "Player.id",
+        "Player_Attributes.overall_rating",
+        "Player.player_api_id",
+        "Player_Attributes.player_api_id"
+    ],
+    "561": [
+        "Player_Attributes.id",
+        "Player.id",
+        "Player_Attributes.date",
+        "Player_Attributes.overall_rating",
+        "Player.player_api_id",
+        "Player_Attributes.strength",
+        "Player_Attributes.player_api_id",
+        "Player.height"
+    ],
+    "562": [
+        "qualifying.q1",
+        "drivers.driverRef",
+        "drivers.driverId",
+        "qualifying.raceId",
+        "qualifying.driverId"
+    ],
+    "563": [
+        "drivers.driverId",
+        "qualifying.q3",
+        "qualifying.number",
+        "drivers.number",
+        "qualifying.raceId",
+        "qualifying.driverId"
+    ],
+    "564": [
+        "races.raceId",
+        "races.time",
+        "results.time",
+        "results.raceId",
+        "races.name",
+        "races.year"
+    ],
+    "565": [
+        "drivers.driverRef",
+        "results.driverId",
+        "drivers.forename",
+        "drivers.driverId",
+        "results.time",
+        "results.raceId",
+        "drivers.surname",
+        "drivers.dob"
+    ],
+    "566": [
+        "races.raceId",
+        "results.driverId",
+        "drivers.forename",
+        "results.fastestLap",
+        "drivers.driverId",
+        "results.raceId",
+        "results.fastestLapSpeed",
+        "races.name",
+        "drivers.surname"
+    ],
+    "567": [
+        "races.raceId",
+        "races.round",
+        "results.driverId",
+        "drivers.forename",
+        "drivers.driverId",
+        "races.time",
+        "results.time",
+        "results.raceId",
+        "races.date",
+        "races.name",
+        "drivers.surname"
+    ],
+    "568": [
+        "drivers.forename",
+        "drivers.driverId",
+        "driverStandings.points",
+        "driverStandings.driverId",
+        "drivers.surname"
+    ],
+    "569": [
+        "races.raceId",
+        "drivers.driverId",
+        "driverStandings.raceId",
+        "driverStandings.driverId",
+        "races.name",
+        "drivers.surname",
+        "driverStandings.position",
+        "races.year"
+    ],
+    "570": [
+        "drivers.surname",
+        "drivers.dob",
+        "drivers.nationality",
+        "drivers.forename"
+    ],
+    "571": [
+        "races.raceId",
+        "races.date",
+        "races.round",
+        "drivers.forename",
+        "drivers.driverId",
+        "driverStandings.raceId",
+        "driverStandings.points",
+        "driverStandings.driverId",
+        "races.name",
+        "drivers.surname"
+    ],
+    "572": [
+        "races.raceId",
+        "races.round",
+        "results.driverId",
+        "drivers.forename",
+        "drivers.driverId",
+        "results.raceId",
+        "results.rank",
+        "races.date",
+        "races.name",
+        "drivers.surname",
+        "races.year"
+    ],
+    "573": [
+        "results.positionOrder",
+        "races.raceId",
+        "races.time",
+        "results.time",
+        "results.raceId",
+        "results.position",
+        "races.name",
+        "races.year"
+    ],
+    "574": [
+        "races.raceId",
+        "results.driverId",
+        "drivers.driverId",
+        "races.time",
+        "results.time",
+        "results.raceId",
+        "driverStandings.raceId",
+        "races.name",
+        "races.year"
+    ],
+    "575": [
+        "results.positionOrder",
+        "races.raceId",
+        "races.round",
+        "results.driverId",
+        "results.milliseconds",
+        "races.time",
+        "results.time",
+        "results.raceId",
+        "results.position",
+        "races.name",
+        "races.year"
+    ],
+    "576": [
+        "constructors.constructorId",
+        "constructors.name",
+        "constructorStandings.raceId",
+        "constructorStandings.constructorId",
+        "constructorStandings.points"
+    ],
+    "577": [
+        "races.raceId",
+        "results.driverId",
+        "drivers.nationality",
+        "drivers.driverId",
+        "races.time",
+        "results.time",
+        "results.raceId",
+        "races.year"
+    ],
+    "578": [
+        "races.raceId",
+        "races.round",
+        "results.driverId",
+        "results.milliseconds",
+        "races.time",
+        "results.position",
+        "results.time",
+        "driverStandings.raceId",
+        "results.raceId",
+        "driverStandings.driverId",
+        "driverStandings.position",
+        "races.year"
+    ],
+    "579": [
+        "results.number",
+        "races.round",
+        "results.driverId",
+        "drivers.driverId",
+        "races.time",
+        "driverStandings.driverId",
+        "driverStandings.position",
+        "races.raceId",
+        "results.resultId",
+        "races.year",
+        "drivers.forename",
+        "results.time",
+        "drivers.number",
+        "drivers.surname",
+        "results.fastestLap",
+        "driverStandings.raceId",
+        "results.raceId",
+        "results.position",
+        "races.name"
+    ],
+    "580": [
+        "races.raceId",
+        "results.laps",
+        "results.driverId",
+        "drivers.driverId",
+        "races.time",
+        "results.time",
+        "results.raceId",
+        "drivers.dob",
+        "races.year"
+    ],
+    "581": [
+        "drivers.dob",
+        "drivers.driverRef",
+        "drivers.nationality"
+    ],
+    "582": [
+        "circuits.name",
+        "circuits.location",
+        "circuits.lat",
+        "circuits.country",
+        "circuits.lng"
+    ],
+    "583": [
+        "races.raceId",
+        "races.round",
+        "results.driverId",
+        "drivers.forename",
+        "drivers.nationality",
+        "drivers.driverId",
+        "results.raceId",
+        "races.date",
+        "races.name",
+        "drivers.surname",
+        "drivers.dob"
+    ],
+    "584": [
+        "superhero.hair_colour_id",
+        "superhero.superhero_name",
+        "colour.colour",
+        "superhero.id",
+        "colour.id",
+        "superhero.eye_colour_id"
+    ],
+    "585": [
+        "publisher.publisher_name",
+        "superhero.height_cm",
+        "superhero.superhero_name",
+        "superhero.publisher_id",
+        "superhero.id",
+        "publisher.id"
+    ],
+    "586": [
+        "superhero.full_name"
+    ],
+    "587": [
+        "superhero.skin_colour_id",
+        "superhero.hair_colour_id",
+        "publisher.publisher_name",
+        "superhero.gender_id",
+        "superhero.publisher_id",
+        "gender.gender",
+        "superhero.eye_colour_id",
+        "colour.colour",
+        "superhero.id",
+        "colour.id",
+        "gender.id",
+        "publisher.id"
+    ],
+    "588": [
+        "users.DisplayName",
+        "users.Reputation"
+    ],
+    "589": [
+        "posts.Title",
+        "posts.Id",
+        "posts.OwnerUserId",
+        "users.DisplayName",
+        "users.Id"
+    ],
+    "590": [
+        "posts.Id",
+        "users.Id",
+        "users.DisplayName",
+        "posts.OwnerUserId"
+    ],
+    "591": [
+        "posts.Title",
+        "posts.Id",
+        "users.DisplayName",
+        "posts.LastEditorUserId",
+        "users.Id"
+    ],
+    "592": [
+        "tags.ExcerptPostId",
+        "posts.Id",
+        "tags.TagName",
+        "tags.Id",
+        "posts.Body"
+    ],
+    "593": [
+        "posts.Id",
+        "posts.OwnerUserId",
+        "users.DisplayName",
+        "posts.Score",
+        "users.Id"
+    ],
+    "594": [
+        "posts.Id",
+        "posts.OwnerUserId",
+        "users.Age",
+        "posts.Score",
+        "users.Id"
+    ],
+    "595": [
+        "comments.CreationDate",
+        "comments.PostId",
+        "comments.UserId",
+        "posts.Id",
+        "posts.FavoriteCount",
+        "comments.Id"
+    ],
+    "596": [
+        "posts.Id",
+        "users.Id",
+        "users.DisplayName",
+        "posts.OwnerUserId"
+    ],
+    "597": [
+        "votes.UserId",
+        "posts.OwnerUserId",
+        "posts.Id",
+        "users.Id",
+        "votes.Id"
+    ],
+    "598": [
+        "posts.ViewCount",
+        "posts.Title"
+    ],
+    "599": [
+        "comments.UserId",
+        "users.DisplayName",
+        "comments.Id",
+        "comments.Text",
+        "users.Id"
+    ],
+    "600": [
+        "posts.Title",
+        "posts.Id",
+        "posts.OwnerUserId",
+        "users.DisplayName",
+        "users.Reputation",
+        "users.Id"
+    ],
+    "601": [
+        "posts.Title",
+        "posts.Id",
+        "posts.OwnerUserId",
+        "users.DisplayName",
+        "posts.OwnerDisplayName",
+        "users.Id"
+    ],
+    "602": [
+        "comments.PostId",
+        "posts.Title",
+        "posts.Id",
+        "posts.ViewCount",
+        "comments.Id",
+        "comments.Text",
+        "posts.Tags"
+    ],
+    "603": [
+        "posts.Id",
+        "users.Id",
+        "posts.OwnerUserId",
+        "users.DisplayName",
+        "posts.OwnerDisplayName",
+        "posts.Tags"
+    ],
+    "604": [
+        "posts.Id",
+        "posts.OwnerUserId",
+        "posts.FavoriteCount",
+        "users.Location",
+        "users.Id"
+    ],
+    "605": [
+        "posts.Title",
+        "posts.Id",
+        "posts.ViewCount",
+        "users.DisplayName",
+        "posts.LastEditorUserId",
+        "users.Id"
+    ],
+    "606": [
+        "posts.Id",
+        "posts.OwnerUserId",
+        "users.Reputation",
+        "users.CreationDate",
+        "posts.Score",
+        "users.Id"
+    ],
+    "607": [
+        "rulings.date",
+        "cards.uuid",
+        "rulings.uuid",
+        "cards.name",
+        "rulings.text",
+        "cards.artist",
+        "cards.hasContentWarning",
+        "cards.text",
+        "cards.id",
+        "rulings.id"
+    ],
+    "608": [
+        "cards.power"
+    ],
+    "609": [
+        "legalities.status",
+        "cards.name",
+        "legalities.uuid",
+        "legalities.id",
+        "legalities.format",
+        "cards.id",
+        "cards.uuid"
+    ],
+    "610": [
+        "cards.types",
+        "cards.type",
+        "cards.subtypes",
+        "cards.originalType"
+    ],
+    "611": [
+        "cards.frameVersion",
+        "cards.borderColor",
+        "cards.name",
+        "cards.manaCost",
+        "cards.layout",
+        "cards.availability"
+    ],
+    "612": [
+        "cards.text",
+        "cards.isTextless",
+        "cards.isStorySpotlight"
+    ],
+    "613": [
+        "set_translations.setCode",
+        "set_translations.translation",
+        "sets.block",
+        "set_translations.language",
+        "sets.code"
+    ],
+    "614": [
+        "cards.borderColor",
+        "cards.type",
+        "cards.uuid",
+        "foreign_data.language",
+        "foreign_data.uuid",
+        "cards.name",
+        "foreign_data.name",
+        "cards.artist",
+        "foreign_data.id",
+        "cards.types",
+        "cards.layout",
+        "foreign_data.type",
+        "cards.id"
+    ],
+    "615": [
+        "cards.name",
+        "foreign_data.language",
+        "cards.uuid",
+        "foreign_data.uuid",
+        "foreign_data.name",
+        "foreign_data.id",
+        "cards.id"
+    ],
+    "616": [
+        "cards.convertedManaCost",
+        "cards.name"
+    ],
+    "617": [
+        "sets.baseSetSize",
+        "set_translations.setCode",
+        "set_translations.translation",
+        "set_translations.language",
+        "sets.code"
+    ],
+    "618": [
+        "cards.convertedManaCost",
+        "cards.name",
+        "cards.setCode",
+        "sets.name",
+        "sets.code"
+    ],
+    "619": [
+        "cards.name",
+        "cards.setCode",
+        "sets.name",
+        "cards.cardKingdomId",
+        "cards.cardKingdomFoilId",
+        "cards.power",
+        "sets.code"
+    ],
+    "620": [
+        "atom.element",
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "bond.molecule_id",
+        "bond.bond_type"
+    ],
+    "621": [
+        "molecule.label",
+        "bond.bond_type",
+        "molecule.molecule_id",
+        "bond.molecule_id"
+    ],
+    "622": [
+        "atom.element",
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "bond.molecule_id",
+        "atom.atom_id",
+        "bond.bond_type"
+    ],
+    "623": [
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "molecule.label",
+        "atom.element"
+    ],
+    "624": [
+        "atom.element",
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "bond.molecule_id",
+        "atom.atom_id",
+        "bond.bond_type"
+    ],
+    "625": [
+        "molecule.label",
+        "bond.bond_type",
+        "molecule.molecule_id",
+        "bond.molecule_id"
+    ],
+    "626": [
+        "molecule.molecule_id",
+        "bond.bond_type",
+        "bond.molecule_id",
+        "bond.bond_id"
+    ],
+    "627": [
+        "molecule.label",
+        "molecule.molecule_id"
+    ],
+    "628": [
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "atom.atom_id",
+        "atom.element"
+    ],
+    "629": [
+        "connected.atom_id2",
+        "atom.element",
+        "connected.bond_id",
+        "connected.atom_id",
+        "bond.bond_id",
+        "atom.atom_id",
+        "bond.bond_type"
+    ],
+    "630": [
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "atom.element"
+    ],
+    "631": [
+        "molecule.label",
+        "atom.element",
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "atom.atom_id"
+    ],
+    "632": [
+        "atom.atom_id",
+        "connected.atom_id",
+        "connected.atom_id2",
+        "atom.element"
+    ],
+    "633": [
+        "molecule.label",
+        "molecule.molecule_id",
+        "bond.molecule_id",
+        "bond.bond_id",
+        "bond.bond_type"
+    ],
+    "634": [
+        "atom.element",
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "bond.molecule_id",
+        "atom.atom_id",
+        "bond.bond_type"
+    ],
+    "635": [
+        "atom.element",
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "bond.molecule_id",
+        "atom.atom_id",
+        "bond.bond_type"
+    ],
+    "636": [
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "molecule.label",
+        "atom.element"
+    ],
+    "637": [
+        "atom.molecule_id",
+        "molecule.molecule_id",
+        "molecule.label",
+        "atom.element"
+    ],
+    "638": [
+        "satscores.cds",
+        "schools.CDSCode",
+        "schools.Virtual",
+        "satscores.AvgScrMath"
+    ],
+    "639": [
+        "frpm.CDSCode",
+        "frpm.Enrollment (Ages 5-17)",
+        "schools.CDSCode",
+        "frpm.Enrollment (K-12)"
+    ],
+    "640": [
+        "satscores.NumGE1500",
+        "schools.CDSCode",
+        "satscores.NumTstTakr",
+        "frpm.Enrollment (Ages 5-17)",
+        "satscores.cds",
+        "frpm.Free Meal Count (Ages 5-17)",
+        "frpm.CDSCode"
+    ],
+    "641": [
+        "schools.CDSCode",
+        "satscores.AvgScrWrite",
+        "schools.Charter",
+        "satscores.cds",
+        "schools.CharterNum"
+    ],
+    "642": [
+        "schools.CDSCode",
+        "schools.MailZip",
+        "schools.Street",
+        "schools.City",
+        "schools.StreetAbr",
+        "schools.School",
+        "schools.State",
+        "schools.Zip",
+        "frpm.Enrollment (Ages 5-17)",
+        "frpm.CDSCode",
+        "frpm.Enrollment (K-12)"
+    ],
+    "643": [
+        "satscores.NumGE1500",
+        "schools.CDSCode",
+        "frpm.Percent (%) Eligible Free (K-12)",
+        "frpm.School Name",
+        "frpm.Free Meal Count (K-12)",
+        "schools.School",
+        "satscores.cds",
+        "frpm.CDSCode",
+        "frpm.Enrollment (K-12)"
+    ],
+    "644": [
+        "schools.CDSCode",
+        "frpm.School Name",
+        "schools.Charter",
+        "schools.School",
+        "satscores.sname",
+        "frpm.Charter Funding Type",
+        "satscores.cds",
+        "satscores.AvgScrMath",
+        "frpm.District Name",
+        "frpm.CDSCode",
+        "schools.FundingType",
+        "schools.District"
+    ],
+    "645": [
+        "schools.CDSCode",
+        "schools.Street",
+        "schools.City",
+        "schools.School",
+        "schools.County",
+        "schools.Zip",
+        "schools.State",
+        "frpm.Low Grade",
+        "frpm.FRPM Count (Ages 5-17)",
+        "frpm.Free Meal Count (Ages 5-17)",
+        "frpm.CDSCode",
+        "schools.GSserved"
+    ],
+    "646": [
+        "schools.CDSCode",
+        "schools.Phone",
+        "satscores.AvgScrWrite",
+        "schools.School",
+        "satscores.cds",
+        "schools.OpenDate",
+        "schools.ClosedDate"
+    ],
+    "647": [
+        "frpm.Percent (%) Eligible Free (K-12)",
+        "frpm.High Grade",
+        "frpm.School Name",
+        "frpm.Free Meal Count (K-12)",
+        "schools.School",
+        "frpm.Low Grade",
+        "frpm.Enrollment (K-12)"
+    ],
+    "648": [
+        "schools.CDSCode",
+        "frpm.School Name",
+        "frpm.Free Meal Count (K-12)",
+        "schools.School",
+        "frpm.FRPM Count (K-12)",
+        "schools.DOC",
+        "frpm.CDSCode",
+        "frpm.Enrollment (K-12)",
+        "schools.District"
+    ],
+    "649": [
+        "satscores.NumGE1500",
+        "schools.CDSCode",
+        "schools.Street",
+        "schools.City",
+        "satscores.NumTstTakr",
+        "schools.State",
+        "schools.Zip",
+        "satscores.cds"
+    ],
+    "650": [
+        "satscores.NumGE1500",
+        "schools.AdmLName1",
+        "schools.CDSCode",
+        "schools.AdmLName3",
+        "schools.AdmFName3",
+        "satscores.cds",
+        "schools.AdmFName2",
+        "schools.AdmFName1",
+        "schools.AdmLName2"
+    ],
+    "651": [
+        "schools.CDSCode",
+        "schools.Phone",
+        "satscores.dname",
+        "satscores.AvgScrRead",
+        "satscores.cds",
+        "schools.District"
+    ],
+    "652": [
+        "schools.CDSCode",
+        "satscores.AvgScrRead",
+        "schools.Virtual",
+        "schools.County",
+        "schools.School",
+        "satscores.cds"
+    ],
+    "653": [
+        "frpm.Academic Year",
+        "schools.CDSCode",
+        "schools.County",
+        "schools.School",
+        "frpm.CDSCode",
+        "schools.DOC",
+        "frpm.Enrollment (K-12)",
+        "schools.District"
+    ],
+    "654": [
+        "schools.CDSCode",
+        "schools.DOC",
+        "schools.StatusType",
+        "schools.County"
+    ],
+    "655": [
+        "schools.CDSCode",
+        "schools.MailStreet",
+        "schools.Street",
+        "schools.School",
+        "satscores.cds",
+        "satscores.AvgScrMath"
+    ],
+    "656": [
+        "schools.CDSCode",
+        "frpm.Percent (%) Eligible Free (K-12)",
+        "frpm.Free Meal Count (K-12)",
+        "schools.Charter",
+        "schools.County",
+        "schools.School",
+        "frpm.CDSCode",
+        "frpm.Enrollment (K-12)"
+    ],
+    "657": [
+        "frpm.Academic Year",
+        "schools.CDSCode",
+        "schools.City",
+        "schools.EdOpsCode",
+        "frpm.Enrollment (Ages 5-17)",
+        "frpm.CDSCode"
+    ],
+    "658": [
+        "schools.Longitude",
+        "schools.GSoffered"
+    ],
+    "659": [
+        "schools.SOC",
+        "schools.City",
+        "schools.School",
+        "schools.County",
+        "schools.AdmEmail2",
+        "schools.OpenDate",
+        "schools.AdmEmail1",
+        "schools.DOC",
+        "schools.District"
+    ],
+    "660": [
+        "client.gender",
+        "district.district_id",
+        "client.district_id",
+        "district.A11"
+    ],
+    "661": [
+        "district.A11",
+        "client.district_id",
+        "district.A3",
+        "district.district_id",
+        "client.gender",
+        "client.client_id"
+    ],
+    "662": [
+        "district.A11",
+        "client.birth_date",
+        "account.account_id",
+        "account.district_id",
+        "client.district_id",
+        "district.district_id",
+        "order.account_id",
+        "account.date",
+        "client.client_id",
+        "disp.client_id",
+        "disp.account_id"
+    ],
+    "663": [
+        "loan.status",
+        "loan.amount"
+    ],
+    "664": [
+        "loan.account_id",
+        "district.A13",
+        "account.account_id",
+        "account.district_id",
+        "district.A12",
+        "district.district_id",
+        "district.A2",
+        "loan.status"
+    ],
+    "665": [
+        "client.gender",
+        "district.district_id",
+        "client.district_id",
+        "district.A2"
+    ],
+    "666": [
+        "account.account_id",
+        "trans.amount",
+        "account.district_id",
+        "trans.account",
+        "trans.operation",
+        "district.district_id",
+        "account.date",
+        "district.A2",
+        "trans.account_id",
+        "trans.type",
+        "trans.date",
+        "order.amount"
+    ],
+    "667": [
+        "trans.amount",
+        "account.account_id",
+        "trans.account",
+        "trans.operation",
+        "trans.account_id",
+        "account.date",
+        "disp.type",
+        "disp.account_id",
+        "trans.type",
+        "disp.client_id",
+        "trans.date",
+        "client.client_id"
+    ],
+    "668": [
+        "trans.trans_id",
+        "trans.amount",
+        "account.account_id",
+        "trans.balance",
+        "order.amount",
+        "trans.account",
+        "trans.operation",
+        "trans.k_symbol",
+        "trans.account_id",
+        "account.date",
+        "disp.type",
+        "order.k_symbol",
+        "disp.account_id",
+        "trans.bank",
+        "trans.type",
+        "disp.client_id",
+        "trans.date",
+        "client.client_id"
+    ],
+    "669": [
+        "district.A11",
+        "client.district_id",
+        "district.district_id",
+        "client.gender",
+        "client.client_id"
+    ],
+    "670": [
+        "card.type",
+        "account.account_id",
+        "client.gender",
+        "client.client_id",
+        "account.frequency",
+        "disp.client_id",
+        "disp.account_id"
+    ],
+    "671": [
+        "district.A11",
+        "client.birth_date",
+        "account.account_id",
+        "account.district_id",
+        "client.district_id",
+        "district.district_id",
+        "order.account_id",
+        "client.gender",
+        "account.date",
+        "client.client_id",
+        "disp.client_id",
+        "disp.account_id"
+    ],
+    "672": [
+        "card.type",
+        "card.disp_id",
+        "client.birth_date",
+        "disp.type",
+        "disp.client_id",
+        "disp.disp_id",
+        "client.client_id"
+    ]
+}

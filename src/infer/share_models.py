@@ -13,7 +13,7 @@ import jsonlines
 import re
 
 class BaseModel():
-    def __init__(self, data_config_path, model_path):
+    def __init__(self, data_config_path, model_path, limit=None):
         self.data_config = json.load(open(data_config_path, 'r'))
         self.table_json_path = os.path.join(BASE_DIR, self.data_config['dev_tables'])
         self.data_json_path = os.path.join(BASE_DIR, self.data_config['dev_data'])
@@ -21,6 +21,8 @@ class BaseModel():
         self.db_dir = os.path.join(BASE_DIR, self.data_config['dev_db_dir'])
         self.table_json = json.load(open(self.table_json_path, 'r'))
         self.data_json = json.load(open(self.data_json_path, 'r'))
+        if limit:
+            self.data_json = self.data_json[:limit]
         self.column_meaning_json = json.load(open(self.column_meaning_path, 'r'))
         self.model_path = model_path
    
@@ -89,12 +91,12 @@ class BaseModel():
         data_batches = self._process_batch_data(data_items, batch_size=batch_size)
 
         llm = LLM(
-        model=self.model_path,
-        tensor_parallel_size=1,
-        trust_remote_code=True,
-        gpu_memory_utilization=0.95,
-        max_model_len=max_token_length,
-    )
+            model=self.model_path,
+            tensor_parallel_size=1,
+            trust_remote_code=True,
+            gpu_memory_utilization=0.85,
+            max_model_len=max_token_length,
+        )
 
         tokenizer = llm.get_tokenizer()
         stop_tokens = ["</FINAL_ANSWER>", "<|EOT|>"]
@@ -110,6 +112,8 @@ class BaseModel():
         print("Sampling Params:", sampling_params)
         
         all_data_with_responses = []
+        total_prompt_tokens = 0
+        total_output_tokens = 0
         for idx, (prompts_in_batch, items_in_batch) in enumerate(
             tqdm(zip(prompt_batches, data_batches))
         ):
@@ -157,16 +161,31 @@ class BaseModel():
                     invalid_response = False
 
             batch_generated_texts = []
+            batch_prompt_tokens = 0
+            batch_output_tokens = 0
             for completion in completions:
                 generated_text = completion.outputs[0].text
                 if len(generated_text.strip()) <= 1:
                     generated_text = "[INVALID]"
                 batch_generated_texts.append(generated_text)
+                batch_prompt_tokens += len(completion.prompt_token_ids) if completion.prompt_token_ids else 0
+                batch_output_tokens += sum(len(o.token_ids) for o in completion.outputs)
+            total_prompt_tokens += batch_prompt_tokens
+            total_output_tokens += batch_output_tokens
             for item, gen_text in zip(items_in_batch, batch_generated_texts):
                 item["response"] = gen_text
                 all_data_with_responses.append(item)
-            
-        print("All batch inference completed.")
+
+        # Explicitly free GPU memory so the next model can load cleanly
+        del llm
+        torch.cuda.empty_cache()
+
+        print(
+            f"All batch inference completed.\n"
+            f"  Token usage — prompt: {total_prompt_tokens}, "
+            f"output: {total_output_tokens}, "
+            f"total: {total_prompt_tokens + total_output_tokens}"
+        )
         return all_data_with_responses
     
     def load_jsonl(self, file_path):
@@ -187,8 +206,8 @@ class BaseModel():
 
 
 class BAM(BaseModel):
-    def __init__(self, data_config_path, model_path, input_json_path):
-        super().__init__(data_config_path, model_path)
+    def __init__(self, data_config_path, model_path, input_json_path, limit=None):
+        super().__init__(data_config_path, model_path, limit=limit)
         self.input_sql_path = input_json_path
         self.generated_sqls = json.load(open(self.input_sql_path, 'r'))
 
@@ -226,8 +245,8 @@ class BAM(BaseModel):
         return masked_traj_response
 
 class SAM(BaseModel):
-    def __init__(self, data_config_path, model_path, input_json_path):
-        super().__init__(data_config_path, model_path)
+    def __init__(self, data_config_path, model_path, input_json_path, limit=None):
+        super().__init__(data_config_path, model_path, limit=limit)
         self.input_sql_path = input_json_path
         self.generated_sqls = json.load(open(self.input_sql_path, 'r'))
     
@@ -375,8 +394,8 @@ class SAM(BaseModel):
         return schema_dic, augmented_schema_list
 
 class LOM(BaseModel):
-    def __init__(self, data_config_path, model_path, input_json_path):
-        super().__init__(data_config_path, model_path)
+    def __init__(self, data_config_path, model_path, input_json_path, limit=None):
+        super().__init__(data_config_path, model_path, limit=limit)
         self.input_sql_path = input_json_path
         self.generated_sqls = json.load(open(self.input_sql_path, 'r'))
     

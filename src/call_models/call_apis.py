@@ -7,6 +7,8 @@ from openai import OpenAI
 import json
 import itertools
 import time
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import tqdm
 from src.utils import new_directory, load_jsonl
 import argparse
@@ -28,16 +30,21 @@ def api_request(messages, engine, client, backend, **kwargs):
                         model=engine,
                         messages=messages,
                         temperature=kwargs.get("temperature", 0),
-                        max_tokens=kwargs.get("max_tokens", 512),
+                        max_completion_tokens=kwargs.get("max_tokens", 512),
                         top_p=kwargs.get("top_p", 1),
                         frequency_penalty=kwargs.get("frequency_penalty", 0),
                         presence_penalty=kwargs.get("presence_penalty", 0),
                         stop=kwargs.get("stop", None),
                     )
+            usage = completion.usage
+            prompt_details = getattr(usage, 'prompt_tokens_details', None)
+            completion_details = getattr(usage, 'completion_tokens_details', None)
             token_usage = {
-                "completion_tokens": completion.usage.completion_tokens,
-                "prompt_tokens": completion.usage.prompt_tokens,
-                "total_tokens": completion.usage.total_tokens,
+                "prompt_tokens": usage.prompt_tokens,
+                "completion_tokens": usage.completion_tokens,
+                "total_tokens": usage.total_tokens,
+                "cached_tokens": getattr(prompt_details, 'cached_tokens', 0) or 0,
+                "reasoning_tokens": getattr(completion_details, 'reasoning_tokens', 0) or 0,
             }
             return None, completion.choices[0].message.content, token_usage
         except Exception as e:
@@ -85,17 +92,16 @@ def api_infer(
         presence_penalty=0,
         stop=None,
         return_format="",
-        system_prompt=None,):
-    
+        system_prompt=None,
+        workers=16,):
+
     prompts = [content['prompt'] for content in prompt_jsonl]
     print(prompts[0])
-    
-    data_list = []
-    for idx in tqdm.tqdm(range(len(prompts))):
-        prompt = prompts[idx]
 
+    def call_one(idx):
+        prompt = prompts[idx]
         reasoning_content, content, token_usage = api_infer_single(
-            prompt = prompt,
+            prompt=prompt,
             max_token_length=max_token_length,
             temperature=temperature,
             top_p=top_p,
@@ -105,13 +111,20 @@ def api_infer(
             return_format=return_format,
             system_prompt=system_prompt,
         )
-        info = {}
-        info['idx'] = idx
-        info["prompt"] = prompt
-        info["response"] = content
-        info["reasoning_content"] = reasoning_content if reasoning_content else ""
-        info["token_usage"] = token_usage if token_usage else ""
-        data_list.append(info)
+        return idx, prompt, reasoning_content, content, token_usage
+
+    data_list = [None] * len(prompts)
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = {executor.submit(call_one, idx): idx for idx in range(len(prompts))}
+        for future in tqdm.tqdm(as_completed(futures), total=len(prompts)):
+            idx, prompt, reasoning_content, content, token_usage = future.result()
+            data_list[idx] = {
+                'idx': idx,
+                'prompt': prompt,
+                'response': content,
+                'reasoning_content': reasoning_content if reasoning_content else "",
+                'token_usage': token_usage if token_usage else "",
+            }
     return data_list
         
 def write_response(data, output_path):

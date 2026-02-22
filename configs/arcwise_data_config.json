@@ -1,6 +1,6 @@
 {
-    "dev_db_dir": "/home/yuxuan/Documents/Research/tinker-sql/databases",
+    "dev_db_dir": "dev/dev_databases",
     "dev_column_meaning": "data/bird/dev/column_meaning.json",
-    "dev_tables": "/home/yuxuan/Documents/Research/noisy-rl/data/dev/dev_tables.json",
+    "dev_tables": "dev/dev_tables.json",
     "dev_data": "data/arcwise/dev.json"
 }

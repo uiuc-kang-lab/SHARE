@@ -1,0 +1,19 @@
+[project]
+name = "share"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "gdown>=5.2.1",
+    "openai==2.21.0",
+    "vllm==0.9.1",
+    "transformers==4.52.4",
+    "tqdm>=4.67.3",
+    "jsonlines>=4.0.0",
+]
+
+[project.optional-dependencies]
+# torch must be installed separately to match your CUDA version:
+#   pip install torch==2.7.0 --index-url https://download.pytorch.org/whl/cu128
+# vllm==0.9.1 requires transformers==4.52.4 (not the latest 5.x)

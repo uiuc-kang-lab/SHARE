@@ -5,6 +5,8 @@ sys.path.append(BASE_DIR)
 
 import json
 import argparse
+import threading
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from tqdm import tqdm
 from src.call_models.call_apis import api_infer_single
 from src.utils import generate_pk_fk
@@ -73,11 +75,20 @@ def extract_sql(response):
     return response.strip()
 
 
+def process_one(idx, info, table_json):
+    prompt = build_prompt(info, table_json)
+    _, response, token_usage = api_infer_single(prompt, max_token_length=1024)
+    sql = extract_sql(response)
+    return idx, sql + '\t----- bird -----\t' + info['db_id'], token_usage
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--data_config_path', type=str, required=True)
     parser.add_argument('--output_path', type=str, default='data/arcwise/baseline_sql.json')
     parser.add_argument('--resume', action='store_true', help='Resume from existing partial output')
+    parser.add_argument('--workers', type=int, default=16, help='Number of parallel API workers')
+    parser.add_argument('--limit', type=int, default=None, help='Only process first N entries (for testing)')
     args = parser.parse_args()
 
     config = json.load(open(args.data_config_path))
@@ -98,24 +109,55 @@ def main():
         print(f"Resuming: loaded {len(existing)} existing results")
 
     results = dict(existing)
-    for idx, info in enumerate(tqdm(data_json, desc="Generating baseline SQL")):
-        if str(idx) in results:
-            continue
-        prompt = build_prompt(info, table_json)
-        _, response, _ = api_infer_single(prompt, max_token_length=1024)
-        sql = extract_sql(response)
-        sql_with_db = sql + '\t----- bird -----\t' + info['db_id']
-        results[str(idx)] = sql_with_db
+    save_lock = threading.Lock()
 
-        # Save incrementally every 50 entries
-        if (idx + 1) % 50 == 0:
-            os.makedirs(os.path.dirname(args.output_path) or '.', exist_ok=True)
-            json.dump(results, open(args.output_path, 'w'), indent=4)
-            print(f"Saved {len(results)} results so far")
+    # Token counters
+    total_prompt_tokens = 0
+    total_completion_tokens = 0
+    total_cached_tokens = 0
+    total_reasoning_tokens = 0
 
-    os.makedirs(os.path.dirname(args.output_path) or '.', exist_ok=True)
-    json.dump(results, open(args.output_path, 'w'), indent=4)
+    # Build list of work to do
+    if args.limit:
+        data_json = data_json[:args.limit]
+    todo = [(idx, info) for idx, info in enumerate(data_json) if str(idx) not in results]
+    print(f"Generating {len(todo)} baseline SQLs with {args.workers} parallel workers...")
+
+    completed_count = 0
+
+    def save_results():
+        os.makedirs(os.path.dirname(args.output_path) or '.', exist_ok=True)
+        json.dump(results, open(args.output_path, 'w'), indent=4)
+
+    def print_token_summary(n):
+        print(
+            f"[{n} done] Tokens — prompt: {total_prompt_tokens}, "
+            f"completion: {total_completion_tokens}, "
+            f"cached: {total_cached_tokens}, "
+            f"reasoning: {total_reasoning_tokens}, "
+            f"total: {total_prompt_tokens + total_completion_tokens}"
+        )
+
+    with ThreadPoolExecutor(max_workers=args.workers) as executor:
+        futures = {executor.submit(process_one, idx, info, table_json): idx for idx, info in todo}
+        with tqdm(total=len(todo), desc="Generating baseline SQL") as pbar:
+            for future in as_completed(futures):
+                idx, sql_with_db, token_usage = future.result()
+                with save_lock:
+                    results[str(idx)] = sql_with_db
+                    total_prompt_tokens += token_usage.get('prompt_tokens', 0)
+                    total_completion_tokens += token_usage.get('completion_tokens', 0)
+                    total_cached_tokens += token_usage.get('cached_tokens', 0)
+                    total_reasoning_tokens += token_usage.get('reasoning_tokens', 0)
+                    completed_count += 1
+                    if completed_count % 50 == 0:
+                        save_results()
+                        print_token_summary(completed_count)
+                pbar.update(1)
+
+    save_results()
     print(f"Done. Saved {len(results)} baseline SQLs to {args.output_path}")
+    print_token_summary(len(todo))
 
 
 if __name__ == '__main__':
