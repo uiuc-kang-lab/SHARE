@@ -25,6 +25,7 @@ class BaseModel():
             self.data_json = self.data_json[:limit]
         self.column_meaning_json = json.load(open(self.column_meaning_path, 'r'))
         self.model_path = model_path
+        self.token_usage_steps = []  # accumulates per-step token usage dicts
    
 
     def _process_batch_data(self, data_list, batch_size=1):
@@ -77,7 +78,7 @@ class BaseModel():
         return final_columns
 
     def infer_batch(self, prompts, data_items, system_prompt=None,
-                    max_token_length=8192, batch_size=100, limit=None):
+                    max_token_length=8192, batch_size=100, limit=None, step_name="unknown"):
                 
         if not limit:
             prompts = prompts[limit:]
@@ -180,9 +181,16 @@ class BaseModel():
         del llm
         torch.cuda.empty_cache()
 
+        token_info = {
+            "step": step_name,
+            "prompt_tokens": total_prompt_tokens,
+            "output_tokens": total_output_tokens,
+            "total_tokens": total_prompt_tokens + total_output_tokens,
+        }
+        self.token_usage_steps.append(token_info)
         print(
             f"All batch inference completed.\n"
-            f"  Token usage — prompt: {total_prompt_tokens}, "
+            f"  [{step_name}] Token usage — prompt: {total_prompt_tokens}, "
             f"output: {total_output_tokens}, "
             f"total: {total_prompt_tokens + total_output_tokens}"
         )
@@ -223,11 +231,11 @@ class BAM(BaseModel):
                 'prompt': user_prompt
             })
             prompts.append(user_prompt)
-        traj_response = self.infer_batch(prompts, infer_data, system_prompt=system_prompt)
+        traj_response = self.infer_batch(prompts, infer_data, system_prompt=system_prompt, step_name="bam_sql2traj")
         if save_path:
             self.save_jsonl(traj_response, save_path)
         return traj_response
-    
+
     def mask_traj(self, traj_list, save_path=None):
         infer_data, prompts = [], []
         for idx, info in enumerate(traj_list):
@@ -239,7 +247,7 @@ class BAM(BaseModel):
                 'prompt': user_prompt
             })
             prompts.append(user_prompt)
-        masked_traj_response = self.infer_batch(prompts, infer_data, system_prompt=system_prompt)
+        masked_traj_response = self.infer_batch(prompts, infer_data, system_prompt=system_prompt, step_name="bam_mask_traj")
         if save_path:
             self.save_jsonl(masked_traj_response, save_path)
         return masked_traj_response
@@ -340,8 +348,7 @@ class SAM(BaseModel):
         ex = self._compute_ex(ground_truth, sl_res)
         recall = self._compute_recall(ground_truth, sl_res)
         precision = self._compute_precision(ground_truth, sl_res)
-        f1 = 2*precision*recall/(precision+recall)
-        # f1 = 0
+        f1 = 2*precision*recall/(precision+recall) if (precision+recall) > 0 else 0.0
         print(f"ex: {ex}, recall: {recall}, precision: {precision}, f1: {f1}")
     
     def schema_augment(self, mask_traj_list, save_path=None):
@@ -360,7 +367,7 @@ class SAM(BaseModel):
                                                             question=question, evidence=evidence, masked_sr=masked_sr)
             infer_data.append({'idx': idx, 'prompt': user_prompt})
             prompts.append(user_prompt)
-        augmented_schema_response = self.infer_batch(prompts, infer_data, system_prompt=system_prompt)
+        augmented_schema_response = self.infer_batch(prompts, infer_data, system_prompt=system_prompt, step_name="sam_schema_augment")
         if save_path:
             self.save_jsonl(augmented_schema_response, save_path)
         return augmented_schema_response
@@ -379,6 +386,18 @@ class SAM(BaseModel):
             final_list.append(tmp_list)
         return final_list
     
+    def reconstruct_augmented_schema(self, augmented_schema_list, final_schema_path=None):
+        """Recompute augmented_schema.json from already-inferred intermediate_traj without re-running the model."""
+        gold_list, before_list = self.get_all_schema(self.generated_sqls)
+        _, after_list = self.get_all_schema(augmented_schema_list)
+        final_schema_list = self.merge_schema_lists(before_list, after_list)
+        self.compute_metrics(gold_list, before_list)
+        self.compute_metrics(gold_list, final_schema_list)
+        schema_dic = {str(idx): schema for idx, schema in enumerate(final_schema_list)}
+        if final_schema_path:
+            json.dump(schema_dic, open(final_schema_path, 'w'), indent=4)
+        return schema_dic
+
     def get_augmented_schema(self, masked_traj_list, augmentation_response_path=None, final_schema_path = None):
         augmented_schema_list = self.schema_augment(masked_traj_list, save_path=augmentation_response_path)
         gold_list, before_list = self.get_all_schema(self.generated_sqls)
@@ -441,11 +460,11 @@ class LOM(BaseModel):
                 'prompt': user_prompt
             })
             prompts.append(user_prompt)
-        traj_response = self.infer_batch(prompts, infer_data, system_prompt=system_prompt)
+        traj_response = self.infer_batch(prompts, infer_data, system_prompt=system_prompt, step_name="lom_modify_traj")
         if save_path:
             self.save_jsonl(traj_response, save_path)
         return traj_response
-    
+
 if __name__ == '__main__':
     data_config_path = '/home/qinbowen/just_malou/gq2138/share/configs/data_config.json'
     model_path = '/home/qinbowen/just_malou/gq2138/share/model/bam'

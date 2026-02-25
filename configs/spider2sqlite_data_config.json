@@ -1,0 +1,6 @@
+{
+    "dev_db_dir": "spider_databases",
+    "dev_column_meaning": "data/spider2sqlite/column_meaning.json",
+    "dev_tables": "data/spider2sqlite/spider2sqlite_tables.json",
+    "dev_data": "data/spider2sqlite/dev.json"
+}

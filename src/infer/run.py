@@ -71,30 +71,53 @@ def postprocess_sql(sql_jsonl, data_json):
     
     return final_sql
     
-def run_inference(bam, sam, lom, output_dir, logger=None):
+def run_inference(bam, sam, lom, output_dir, logger=None, baseline_sql_token_log=None):
     log = logger.info if logger else print
 
     original_traj_save_path = os.path.join(output_dir, 'original_traj.jsonl')
     masked_traj_save_path = os.path.join(output_dir, 'masked_traj.jsonl')
-    log("=== BAM: sql2traj ===")
-    original_traj_list = bam.sql2traj(save_path=original_traj_save_path)
-    log("=== BAM: mask_traj ===")
-    masked_traj_list = bam.mask_traj(original_traj_list, masked_traj_save_path)
-    log(f"Original trajectory saved to {original_traj_save_path}")
-    log(f"Masked trajectory saved to {masked_traj_save_path}")
+    if os.path.exists(original_traj_save_path):
+        log(f"Resuming: loading existing {original_traj_save_path}")
+        original_traj_list = load_jsonl(original_traj_save_path)
+    else:
+        log("=== BAM: sql2traj ===")
+        original_traj_list = bam.sql2traj(save_path=original_traj_save_path)
+        log(f"Original trajectory saved to {original_traj_save_path}")
+
+    if os.path.exists(masked_traj_save_path):
+        log(f"Resuming: loading existing {masked_traj_save_path}")
+        masked_traj_list = load_jsonl(masked_traj_save_path)
+    else:
+        log("=== BAM: mask_traj ===")
+        masked_traj_list = bam.mask_traj(original_traj_list, masked_traj_save_path)
+        log(f"Masked trajectory saved to {masked_traj_save_path}")
 
     intermediate_traj_save_path = os.path.join(output_dir, 'intermediate_traj.jsonl')
     augmented_schema_path = os.path.join(output_dir, 'augmented_schema.json')
-    log("=== SAM: get_augmented_schema ===")
-    augmented_schema, intermediate_traj_list = sam.get_augmented_schema(masked_traj_list, augmentation_response_path=intermediate_traj_save_path,
-                                                        final_schema_path=augmented_schema_path)
-    log(f"Intermediate trajectory saved to {intermediate_traj_save_path}")
-    log(f"Augmented schema saved to {augmented_schema_path}")
+    if os.path.exists(augmented_schema_path):
+        log(f"Resuming: loading existing {augmented_schema_path}")
+        augmented_schema = json.load(open(augmented_schema_path))
+        intermediate_traj_list = load_jsonl(intermediate_traj_save_path)
+    elif os.path.exists(intermediate_traj_save_path):
+        log(f"Resuming: intermediate_traj exists, reconstructing augmented_schema without re-running SAM...")
+        intermediate_traj_list = load_jsonl(intermediate_traj_save_path)
+        augmented_schema = sam.reconstruct_augmented_schema(intermediate_traj_list, final_schema_path=augmented_schema_path)
+        log(f"Augmented schema saved to {augmented_schema_path}")
+    else:
+        log("=== SAM: get_augmented_schema ===")
+        augmented_schema, intermediate_traj_list = sam.get_augmented_schema(masked_traj_list, augmentation_response_path=intermediate_traj_save_path,
+                                                            final_schema_path=augmented_schema_path)
+        log(f"Intermediate trajectory saved to {intermediate_traj_save_path}")
+        log(f"Augmented schema saved to {augmented_schema_path}")
 
     final_traj_save_path = os.path.join(output_dir, 'final_traj.jsonl')
-    log("=== LOM: modify_traj ===")
-    final_traj = lom.modify_traj(augmented_schema, intermediate_traj_list, save_path=final_traj_save_path)
-    log(f"Final trajectory saved to {final_traj_save_path}")
+    if os.path.exists(final_traj_save_path):
+        log(f"Resuming: loading existing {final_traj_save_path}")
+        final_traj = load_jsonl(final_traj_save_path)
+    else:
+        log("=== LOM: modify_traj ===")
+        final_traj = lom.modify_traj(augmented_schema, intermediate_traj_list, save_path=final_traj_save_path)
+        log(f"Final trajectory saved to {final_traj_save_path}")
 
     prompt_list = []
     for idx, info in enumerate(bam.data_json):
@@ -116,10 +139,10 @@ def run_inference(bam, sam, lom, output_dir, logger=None):
     save_jsonl(prompt_list, prompt_save_path)
     log(f"SQL generation prompts saved to {prompt_save_path}")
 
+    final_sql_save_path = os.path.join(output_dir, 'final_sql.json')
     log("=== GPT-5.2: final SQL generation ===")
     final_sql_list = api_infer(prompt_jsonl=prompt_list)
     processed_final_sql = postprocess_sql(final_sql_list, bam.data_json)
-    final_sql_save_path = os.path.join(output_dir, 'final_sql.json')
     json.dump(processed_final_sql, open(final_sql_save_path, 'w'), indent=4)
     log(f"Final SQLs saved to {final_sql_save_path}")
 
@@ -147,6 +170,36 @@ def run_inference(bam, sam, lom, output_dir, logger=None):
     json.dump({"summary": gpt_token_summary, "per_entry": token_log},
               open(token_log_path, 'w'), indent=2)
     log(f"Token usage saved to {token_log_path}")
+
+    # Aggregate all token usage across all pipeline steps
+    all_steps = []
+    if baseline_sql_token_log:
+        all_steps.append(baseline_sql_token_log)
+    all_steps.extend(bam.token_usage_steps)
+    all_steps.extend(sam.token_usage_steps)
+    all_steps.extend(lom.token_usage_steps)
+    all_steps.append(gpt_token_summary)
+
+    grand_total_prompt = sum(s.get('prompt_tokens', 0) for s in all_steps)
+    grand_total_output = sum(
+        s.get('output_tokens', 0) + s.get('completion_tokens', 0)
+        for s in all_steps
+    )
+    grand_total = sum(s.get('total_tokens', 0) for s in all_steps)
+
+    all_token_log = {
+        "grand_total": {
+            "prompt_tokens": grand_total_prompt,
+            "output_tokens": grand_total_output,
+            "total_tokens": grand_total,
+        },
+        "per_step": all_steps,
+        "gpt_per_entry": token_log,
+    }
+    all_token_log_path = os.path.join(output_dir, 'all_token_usage.json')
+    json.dump(all_token_log, open(all_token_log_path, 'w'), indent=2)
+    log(f"\n[All steps token usage] grand_total={grand_total_prompt}p + {grand_total_output}o = {grand_total} tokens")
+    log(f"Full token log saved to {all_token_log_path}")
 
     return final_sql_list
 
@@ -181,7 +234,19 @@ def main(opt):
     sam = SAM(data_config_path, sam_path, input_sql_path, limit=opt.limit)
     lom = LOM(data_config_path, lom_path, input_sql_path, limit=opt.limit)
 
-    final_sqls = run_inference(bam, sam, lom, output_dir, logger=logger)
+    # Load baseline SQL token log if available alongside the input SQL file
+    baseline_token_log_path = os.path.splitext(input_sql_path)[0] + '_token_usage.json'
+    baseline_sql_token_log = None
+    if os.path.exists(baseline_token_log_path):
+        try:
+            baseline_sql_token_log = json.load(open(baseline_token_log_path))
+            baseline_sql_token_log['step'] = 'baseline_sql_gpt'
+            logger.info(f"Loaded baseline SQL token log from {baseline_token_log_path}")
+        except Exception:
+            pass
+
+    final_sqls = run_inference(bam, sam, lom, output_dir, logger=logger,
+                               baseline_sql_token_log=baseline_sql_token_log)
     logger.info("Pipeline complete.")
     
 if __name__ == "__main__":

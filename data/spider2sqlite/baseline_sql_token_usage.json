@@ -1,0 +1,8 @@
+{
+  "step": "baseline_sql_gpt",
+  "prompt_tokens": 116804,
+  "completion_tokens": 56376,
+  "cached_tokens": 11008,
+  "reasoning_tokens": 6144,
+  "total_tokens": 173180
+}
